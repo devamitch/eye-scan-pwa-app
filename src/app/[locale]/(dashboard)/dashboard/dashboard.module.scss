@@ -1,0 +1,39 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-bottom: 10px;
+}
+
+
+.streamSection {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+.metricsPanel {
+	padding: 1.5rem;
+	background-color: hsl(var(--card));
+	border: 1px solid hsl(var(--border));
+	border-radius: 12px;
+}
+
+
+@media (max-width: 768px) {
+	.container {
+		gap: 1.25rem;
+	}
+	.sectionHeading {
+		flex-direction: column;
+		gap: 1rem;
+		align-items: flex-start;
+	}
+}
+
+@media (max-width: 480px) {
+	.metricsPanel {
+		padding: 0.5rem;
+	}
+}

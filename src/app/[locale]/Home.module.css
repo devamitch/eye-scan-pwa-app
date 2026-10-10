@@ -1,0 +1,234 @@
+.mainContent {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	gap: 100px;
+	padding: 60px 10px;
+}
+
+.sectionTitle {
+	font-size: 2.25rem;
+	line-height: 2.5rem;
+	font-weight: 700;
+	text-align: center;
+	max-width: 48rem;
+	margin: 0 auto 3rem auto;
+	color: var(--metricValue);
+}
+
+.subHeading {
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: #485953;
+	margin-bottom: 1rem;
+}
+
+.sectionDescription {
+	color: #6b7280;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	font-weight: 400;
+}
+
+.twoColumnLayout {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	gap: 10%;
+}
+
+.layoutImage {
+	display: flex;
+	justify-self: center;
+	align-self: center;
+	border-radius: 20px;
+}
+
+.layoutContent {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1.5rem;
+}
+
+.buisnessContent {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1.5rem;
+	background-color: var(--cardBackground);
+	padding: 50px;
+	border-radius: 20px;
+}
+
+.infoCard {
+	background-color: var(--cardBackground);
+	border-radius: 1rem;
+	padding: 2rem;
+	width: 100%;
+}
+
+.checkList {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+.checkListItem {
+	font-size: 1rem;
+	color: var(--lightText);
+	padding-left: 1.75rem;
+	position: relative;
+	line-height: 1.6;
+	margin-bottom: 0.75rem;
+}
+
+.checkListItem:last-child {
+	margin-bottom: 0;
+}
+
+.checkListItem::before {
+	content: '✓';
+	position: absolute;
+	left: 0;
+	color: var(--lightMetricValue);
+	font-weight: bold;
+	font-size: 1.25rem;
+	top: -2px;
+}
+
+.downloadSection {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 3rem;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background: var(--cardBackground);
+	border-radius: 1.5rem;
+	gap: 1.5rem;
+}
+
+.downloadTitle {
+	font-size: 2rem;
+	font-weight: 700;
+	color: var(--metricValue);
+}
+
+.downloadSubtitle {
+	font-size: 1.125rem;
+	font-weight: 500;
+	color: var(--lightMetricValue);
+}
+
+.downloadDescription {
+	font-size: 1rem;
+	color: var(--lightText);
+	line-height: 1.6;
+}
+
+.downloadButton {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	background-color: var(--lightMetricValue);
+	color: var(--cardBackground);
+	padding: 0.875rem 1.75rem;
+	border-radius: 0.75rem;
+	font-weight: 600;
+	font-size: 1rem;
+	text-decoration: none;
+	width: fit-content;
+}
+
+.downloadButton:hover {
+	background-color: var(--metricValue);
+}
+.backgroundImage {
+	background-image: url('../../assets/images/background/background.png');
+	background-size: contain;
+}
+@media (max-width: 1024px) {
+	.twoColumnLayout {
+		flex-direction: column;
+		gap: 20px;
+	}
+	.layoutImage {
+		display: none;
+	}
+
+	.buisnessContent {
+		padding: 20px;
+	}
+	.infoCard {
+		padding: 1.5rem;
+	}
+
+	.downloadSection {
+		padding: 2rem;
+	}
+
+	.downloadTitle {
+		font-size: 1.75rem;
+	}
+
+	.downloadSubtitle {
+		font-size: 1rem;
+	}
+
+	.downloadDescription {
+		font-size: 0.9375rem;
+	}
+
+	.downloadButton {
+		width: 100%;
+		justify-content: center;
+		padding: 1rem 1.5rem;
+	}
+}
+
+@media (max-width: 640px) {
+	.mainContent {
+		gap: 60px;
+		padding: 40px 10px;
+	}
+
+	.sectionTitle {
+		font-size: 1.75rem;
+		line-height: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.downloadSection {
+		padding: 1.5rem;
+		gap: 1rem;
+	}
+
+	.downloadTitle {
+		font-size: 1.5rem;
+		line-height: 1.75rem;
+	}
+
+	.downloadSubtitle {
+		font-size: 0.9375rem;
+	}
+
+	.downloadDescription {
+		font-size: 0.875rem;
+	}
+
+	.downloadButton {
+		font-size: 0.9375rem;
+		padding: 0.875rem 1.25rem;
+	}
+
+	.infoCard {
+		padding: 1.25rem;
+	}
+
+	.buisnessContent {
+		padding: 1.25rem;
+	}
+}

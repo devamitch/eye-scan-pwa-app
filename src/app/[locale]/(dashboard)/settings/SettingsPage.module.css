@@ -1,0 +1,222 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+	padding: 20px;
+}
+
+.section {
+	width: 100%;
+	height: auto;
+	background: var(--cardBackground);
+	border-radius: 20px;
+	padding: 1.25rem;
+}
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.5rem;
+	padding: 10px;
+	text-align: start;
+	font-size: 16px;
+	width: 100%;
+	cursor: pointer;
+	color: var(--metricValue);
+}
+
+.accordionContent {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	padding-left: 1rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	animation: slideDown 0.3s ease-out;
+}
+
+.optionButton {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 10px 12px;
+	background: var(--subtleCardBackground);
+	border-radius: 20px;
+	cursor: pointer;
+	color: var(--metricValue);
+	transition: all 0.2s ease;
+	font-size: 12px;
+}
+
+.selectedOption {
+	background: var(--lightMetricValue);
+	color: var(--cardBackground);
+}
+
+@keyframes slideDown {
+	from {
+		opacity: 0;
+		max-height: 0;
+		transform: translateY(-10px);
+	}
+	to {
+		opacity: 1;
+		max-height: 300px;
+		transform: translateY(0);
+	}
+}
+.Logoutbutton {
+	width: 100%;
+	height: auto;
+	background: var(--cardBackground);
+	border-radius: 20px;
+	padding: 1.25rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 0.5rem;
+	color: var(--highValue);
+	cursor: pointer;
+}
+
+
+/* Delete Account Button */
+.deleteAccountButton {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.5rem;
+	padding: 14px 12px;
+	text-align: start;
+	width: 100%;
+	cursor: pointer;
+	border-radius: 12px;
+	border: none;
+	background:var(--subtleCardBackground);
+}
+
+
+.deleteAccountContent {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	flex: 1;
+}
+
+.deleteAccountIcon {
+	width: 40px;
+	height: 40px;
+	border-radius: 12px;
+	background: var(--highValue);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--cardBackground);
+}
+
+.deleteAccountText {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.deleteAccountTitle {
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--highValue);
+}
+
+.deleteAccountSubtitle {
+	font-size: 13px;
+	color: var(--lightText);
+}
+
+.deleteWarning {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	padding: 12px 0px;
+}
+
+.deleteWarning svg {
+	color: var(--modValue);
+	margin-top: 2px;
+}
+
+.deleteWarning p {
+	font-size: 13px;
+	color: var(--lightText);
+	line-height: 1.5;
+}
+
+@media (max-width: 460px) {
+	.container {
+		gap: 1rem;
+		padding: 10px;
+	}
+
+	.button {
+		padding: 8px;
+		gap: 0.25rem;
+		font-size: 14px;
+	}
+
+	.section {
+		padding: 1rem;
+	}
+
+	.accordionContent {
+		padding-left: 0.5rem;
+	}
+
+	.optionButton {
+		padding: 0.6rem 0.8rem;
+		font-size: 0.85rem;
+	}
+
+	.deleteAccountButton {
+		padding: 12px 10px;
+	}
+
+	.deleteAccountIcon {
+		width: 36px;
+		height: 36px;
+	}
+
+	.deleteAccountTitle {
+		font-size: 14px;
+	}
+
+	.deleteAccountSubtitle {
+		font-size: 12px;
+	}
+
+	.deleteWarning {
+		padding: 10px;
+	}
+
+	.deleteWarning p {
+		font-size: 12px;
+	}
+
+	.Logoutbutton {
+		padding: 1rem;
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 360px) {
+	.button {
+		font-size: 12px;
+	}
+
+	.deleteAccountTitle {
+		font-size: 13px;
+	}
+
+	.deleteAccountSubtitle {
+		font-size: 11px;
+	}
+}

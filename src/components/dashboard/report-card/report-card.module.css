@@ -1,0 +1,212 @@
+.card {
+
+	flex-grow: 1;
+	width: 100%;
+	border-radius: 20px;
+	background: var(--cardBackground);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 132px;
+	padding: 1.25rem;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	font-size: 16px;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	color: var(--metricValue);
+}
+
+.subtitle {
+	font-size: 12px;
+	color: var(--lightMetricValue);
+	font-weight: 400;
+}
+
+
+
+.conditionSection {
+	font-size: 12px;
+	color: var(--lightMetricValue);
+	font-weight: 400;
+	margin-top: 4px;
+	text-align: center;
+}
+
+.progressWrapper {
+	position: relative;
+	width: 280px;
+	height: 140px;
+	top: 40;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+	justify-self: center;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-bottom: 2rem;
+}
+
+.emojiCircle {
+	position: absolute;
+	z-index: 10;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: var(--progress-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.emoji {
+	font-size: 1.75rem;
+	color: var(--cardBackground);
+}
+
+.statsBox {
+	border-radius: 20px;
+	padding: 24px 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--subtleCardBackground);
+	text-align: center;
+	flex-direction: column;
+	width: 100%;
+}
+
+.statsRow {
+	display: flex;
+	align-items: start;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.limitLabel {
+	font-size: 1rem;
+	font-weight: 500;
+	opacity: 0.8;
+}
+
+.statsValue {
+	font-size: 2.5rem;
+	font-weight: 600;
+	margin-left: 24px;
+	color: var(--metricValue);
+}
+
+.statsFooter {
+	font-size: 0.75rem;
+	font-weight: 400;
+	color: var(--metricValue);
+}
+
+.progressWrapper svg {
+	width: 100%;
+	height: 100%;
+}
+.placeholder {
+	width: 24px;
+	height: 24px;
+}
+
+@media (max-width: 1024px) {
+	.card {
+		height: auto;
+		justify-content: start;
+		gap: 2.5rem;
+	}
+
+	.date {
+		font-size: 0.8rem;
+	}
+}
+
+@media (max-width: 500px) {
+	.card {
+		height: auto;
+		/* min-height: 500px; */
+		padding: 1.5rem 1rem;
+		/* gap: 20px; */
+	}
+
+	.progressWrapper {
+		width: 220px;
+		height: 110px;
+	}
+
+	.statsBox {
+		width: 100%;
+		padding: 12px ;
+	}
+
+	.statsValue {
+		font-size: 1.5rem !important;
+	}
+
+	.statsFooter {
+		font-size: 0.7rem;
+	}
+
+	.date {
+		align-self: flex-start;
+		font-size: 0.7rem;
+	}
+
+	.subtitle {
+		font-size: 12px;
+	}
+
+	.conditionSection {
+		font-size: 0.7rem;
+	}
+
+	.limitLabel {
+		font-size: 12px;
+		font-weight: 500;
+		opacity: 0.8;
+	}
+}
+
+@media (max-width: 400px) {
+	.progressWrapper {
+		width: 180px;
+		height: 90px;
+	}
+	.title {
+		font-size: 14px;
+	}
+
+	.emojiCircle {
+		width: 40px;
+		height: 40px;
+	}
+
+	.emoji {
+		font-size: 1.5rem;
+	}
+
+	.statsValue {
+		font-size: 1.5rem !important;
+	}
+
+	.limitLabel {
+		font-size: 12px;
+		font-weight: 500;
+		opacity: 0.8;
+	}
+}

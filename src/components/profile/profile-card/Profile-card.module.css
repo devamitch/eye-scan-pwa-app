@@ -1,0 +1,106 @@
+.container {
+	width: 100%;
+	height: auto;
+	background: var(--cardBackground);
+	border-radius: 20px;
+	justify-content: space-between;
+	padding: 1.25rem;
+	display: flex;
+	flex-direction: row;
+	color: var(--metricValue);
+}
+.icon {
+	align-self: center;
+	color: var(--metricValue);
+}
+.profileSection {
+	align-items: flex-start;
+	justify-content: flex-start;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 2px;
+}
+.profileContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 16px;
+}
+.nameContainer {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+.ageBadge {
+	font-size: 12px;
+	font-weight: 500;
+	color: var(--metricValue);
+	background-color: var(--subtleCardBackground);
+	padding: 4px 8px;
+	border-radius: 12px;
+}
+.editText{
+	display: block;
+}
+.editLink{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+;
+}
+.avatar {
+	width: 4.5rem;
+	height: 4.5rem;
+	border-radius: 50%;
+}
+
+.title {
+	font-size: 22px;
+	font-weight: 500;
+}
+.subtitle {
+	font-size: 15px;
+	font-weight: 400;
+}
+.link {
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--metricValue);
+	cursor: pointer;
+    text-decoration: underline;
+}
+.link:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 460px) {
+    .container {
+        
+	padding: 1rem;
+    }
+	.editText{
+		display: none;
+	}
+	.ageBadge{
+		font-size: 10px;
+		padding: 2px 4px;
+		border-radius: 8px;
+	}
+	.title {
+		font-size: 16px;
+	}
+	.subtitle {
+		font-size: 11px;
+	}
+	.button {
+		font-size: 11px;
+	}
+}
+@media (max-width: 370px) {
+	.ageBadge{
+		font-size: 8px;
+		padding: 1px 2px;
+		border-radius: 6px;
+	}
+}

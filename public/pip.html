@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Safari/iOS PiP Test</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+				padding: 20px;
+				background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+				min-height: 100vh;
+				color: white;
+			}
+
+			.container {
+				max-width: 600px;
+				margin: 0 auto;
+				background: rgba(255, 255, 255, 0.1);
+				backdrop-filter: blur(10px);
+				border-radius: 20px;
+				padding: 30px;
+				box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+			}
+
+			h1 {
+				text-align: center;
+				margin-bottom: 20px;
+			}
+
+			.video-container {
+				background: #000;
+				border-radius: 10px;
+				overflow: hidden;
+				margin-bottom: 20px;
+				position: relative;
+			}
+
+			video {
+				width: 100%;
+				display: block;
+			}
+
+			.controls {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+			}
+
+			button {
+				padding: 15px 20px;
+				font-size: 16px;
+				background: white;
+				color: #667eea;
+				border: none;
+				border-radius: 10px;
+				cursor: pointer;
+				font-weight: 600;
+				transition: all 0.3s;
+			}
+
+			button:hover {
+				transform: translateY(-2px);
+				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+			}
+
+			button:active {
+				transform: translateY(0);
+			}
+
+			button:disabled {
+				opacity: 0.5;
+				cursor: not-allowed;
+			}
+
+			.status {
+				background: rgba(0, 0, 0, 0.5);
+				padding: 15px;
+				border-radius: 10px;
+				margin-top: 20px;
+				font-size: 14px;
+			}
+
+			.status-item {
+				display: flex;
+				justify-content: space-between;
+				margin: 5px 0;
+			}
+
+			.status-value {
+				font-weight: 600;
+				color: #4ade80;
+			}
+
+			.log {
+				background: rgba(0, 0, 0, 0.7);
+				padding: 15px;
+				border-radius: 10px;
+				margin-top: 20px;
+				max-height: 300px;
+				overflow-y: auto;
+				font-family: 'Courier New', monospace;
+				font-size: 12px;
+			}
+
+			.log-entry {
+				margin: 5px 0;
+				padding: 5px;
+				border-left: 3px solid #4ade80;
+				padding-left: 10px;
+			}
+
+			.log-error {
+				border-left-color: #ef4444;
+				color: #fecaca;
+			}
+
+			.log-success {
+				border-left-color: #4ade80;
+				color: #bbf7d0;
+			}
+
+			.log-info {
+				border-left-color: #60a5fa;
+				color: #bfdbfe;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>🍎 Safari/iOS PiP Test</h1>
+
+			<div class="video-container">
+				<video
+					id="testVideo"
+					playsinline
+					webkit-playsinline
+					muted
+					disablePictureInPicture="false"
+				></video>
+			</div>
+
+			<div class="controls">
+				<button id="cameraBtn">1. Start Camera</button>
+				<button id="pipBtn" disabled>2. Test PiP</button>
+				<button id="exitPipBtn" disabled>Exit PiP</button>
+				<button id="clearLogBtn">Clear Log</button>
+			</div>
+
+			<div class="status">
+				<h3 style="margin-bottom: 10px">Status:</h3>
+				<div class="status-item">
+					<span>Browser:</span>
+					<span class="status-value" id="browserInfo">-</span>
+				</div>
+				<div class="status-item">
+					<span>PiP Supported:</span>
+					<span class="status-value" id="pipSupport">-</span>
+				</div>
+				<div class="status-item">
+					<span>Camera Active:</span>
+					<span class="status-value" id="cameraStatus">No</span>
+				</div>
+				<div class="status-item">
+					<span>In PiP Mode:</span>
+					<span class="status-value" id="pipStatus">No</span>
+				</div>
+				<div class="status-item">
+					<span>Video Dimensions:</span>
+					<span class="status-value" id="videoDimensions">-</span>
+				</div>
+			</div>
+
+			<div class="log" id="log">
+				<div class="log-entry log-info">Ready to test...</div>
+			</div>
+		</div>
+
+		<script>
+			const video = document.getElementById('testVideo');
+			const cameraBtn = document.getElementById('cameraBtn');
+			const pipBtn = document.getElementById('pipBtn');
+			const exitPipBtn = document.getElementById('exitPipBtn');
+			const clearLogBtn = document.getElementById('clearLogBtn');
+			const logContainer = document.getElementById('log');
+
+			// Detect browser
+			const ua = navigator.userAgent.toLowerCase();
+			const isSafari = /safari/.test(ua) && !/chrome/.test(ua);
+			const isIOS =
+				/ipad|iphone|ipod/.test(ua) ||
+				(navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
+			function log(message, type = 'info') {
+				const entry = document.createElement('div');
+				entry.className = `log-entry log-${type}`;
+				entry.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+				logContainer.appendChild(entry);
+				logContainer.scrollTop = logContainer.scrollHeight;
+				console.log(message);
+			}
+
+			function updateStatus() {
+				document.getElementById('browserInfo').textContent = isIOS
+					? 'iOS Safari'
+					: isSafari
+						? 'Safari'
+						: 'Other';
+
+				const pipSupported =
+					'requestPictureInPicture' in HTMLVideoElement.prototype &&
+					document.pictureInPictureEnabled;
+				document.getElementById('pipSupport').textContent = pipSupported
+					? 'Yes ✅'
+					: 'No ❌';
+
+				document.getElementById('cameraStatus').textContent = video.srcObject
+					? 'Yes ✅'
+					: 'No ❌';
+
+				document.getElementById('pipStatus').textContent = document.pictureInPictureElement
+					? 'Yes ✅'
+					: 'No ❌';
+
+				if (video.videoWidth > 0) {
+					document.getElementById('videoDimensions').textContent =
+						`${video.videoWidth}x${video.videoHeight}`;
+				}
+			}
+
+			// Initial status
+			updateStatus();
+			log('Page loaded', 'success');
+			log(`Browser: ${isIOS ? 'iOS Safari' : isSafari ? 'Safari' : 'Other'}`, 'info');
+
+			// Camera button
+			cameraBtn.addEventListener('click', async () => {
+				try {
+					log('🎥 Requesting camera access...', 'info');
+
+					const stream = await navigator.mediaDevices.getUserMedia({
+						video: {
+							width: { ideal: 1280 },
+							height: { ideal: 720 },
+						},
+					});
+
+					video.srcObject = stream;
+					await video.play();
+
+					log('✅ Camera started successfully', 'success');
+					log(`Video dimensions: ${video.videoWidth}x${video.videoHeight}`, 'info');
+
+					cameraBtn.textContent = '✅ Camera Active';
+					cameraBtn.disabled = true;
+					pipBtn.disabled = false;
+
+					updateStatus();
+				} catch (error) {
+					log(`❌ Camera error: ${error.name} - ${error.message}`, 'error');
+					updateStatus();
+				}
+			});
+
+			// PiP button
+			pipBtn.addEventListener('click', async () => {
+				try {
+					log('🎬 Testing PiP...', 'info');
+
+					// Check if PiP is supported
+					if (!('requestPictureInPicture' in video)) {
+						log('❌ requestPictureInPicture not available', 'error');
+						alert('PiP is not supported in this browser');
+						return;
+					}
+
+					if (!document.pictureInPictureEnabled) {
+						log('❌ document.pictureInPictureEnabled is false', 'error');
+						alert('PiP is disabled. Check browser settings.');
+						return;
+					}
+
+					// Log video state
+					log(
+						`Video state: paused=${video.paused}, readyState=${video.readyState}`,
+						'info'
+					);
+					log(`Video dimensions: ${video.videoWidth}x${video.videoHeight}`, 'info');
+					log(`Video srcObject: ${!!video.srcObject}`, 'info');
+
+					// Ensure video is playing
+					if (video.paused) {
+						log('▶️ Video is paused, attempting to play...', 'info');
+						await video.play();
+						await new Promise((r) => setTimeout(r, 100));
+					}
+
+					log('📞 Calling video.requestPictureInPicture()...', 'info');
+					await video.requestPictureInPicture();
+
+					log('✅ PiP activated successfully!', 'success');
+					pipBtn.disabled = true;
+					exitPipBtn.disabled = false;
+					updateStatus();
+				} catch (error) {
+					log(`❌ PiP failed: ${error.name} - ${error.message}`, 'error');
+
+					if (error.name === 'NotAllowedError') {
+						alert('PiP was blocked. Please check browser permissions.');
+					} else if (error.name === 'NotSupportedError') {
+						alert('PiP is not supported. Check browser settings.');
+					} else if (error.name === 'InvalidStateError') {
+						alert('Video is not ready for PiP. Try starting camera first.');
+					} else {
+						alert(`PiP failed: ${error.message}`);
+					}
+
+					updateStatus();
+				}
+			});
+
+			// Exit PiP button
+			exitPipBtn.addEventListener('click', async () => {
+				try {
+					if (document.pictureInPictureElement) {
+						await document.exitPictureInPicture();
+						log('✅ Exited PiP', 'success');
+					}
+				} catch (error) {
+					log(`❌ Exit PiP error: ${error.message}`, 'error');
+				}
+			});
+
+			// Listen for PiP events
+			video.addEventListener('enterpictureinpicture', () => {
+				log('📺 enterpictureinpicture event fired', 'success');
+				pipBtn.disabled = true;
+				exitPipBtn.disabled = false;
+				updateStatus();
+			});
+
+			video.addEventListener('leavepictureinpicture', () => {
+				log('👋 leavepictureinpicture event fired', 'info');
+				pipBtn.disabled = false;
+				exitPipBtn.disabled = true;
+				updateStatus();
+			});
+
+			// Clear log button
+			clearLogBtn.addEventListener('click', () => {
+				logContainer.innerHTML = '<div class="log-entry log-info">Log cleared</div>';
+			});
+
+			// Monitor video state
+			video.addEventListener('loadedmetadata', () => {
+				log('📊 Video metadata loaded', 'success');
+				updateStatus();
+			});
+
+			video.addEventListener('playing', () => {
+				log('▶️ Video is playing', 'success');
+				updateStatus();
+			});
+
+			video.addEventListener('error', (e) => {
+				log(`❌ Video error: ${e.message}`, 'error');
+				updateStatus();
+			});
+
+			// Update status every 2 seconds
+			setInterval(updateStatus, 2000);
+		</script>
+	</body>
+</html>

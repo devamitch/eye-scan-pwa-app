@@ -1,0 +1,215 @@
+/* ====================  BASE CARD STYLES ====================  */
+
+.card {
+	position: relative;
+	width: 100%;
+	border-radius: 20px;
+	background: var(--cardBackground);
+	overflow: hidden;
+	transition: all 0.3s ease;
+}
+
+.clickable {
+	cursor: pointer;
+}
+
+
+
+/* ====================  IMAGE STYLES ====================  */
+
+.image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 20px;
+}
+
+/* ====================  CONTENT STYLES ====================  */
+
+.content {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+}
+
+.title {
+	font-weight: 500;
+	width: 100%;
+}
+
+/* ====================  VARIANT: TEXT-TOP ====================  */
+
+.variant-text-top {
+	height: 190px;
+}
+
+.variant-text-top .image {
+	position: absolute;
+	top: 65px;
+	left: 40px;
+	border-radius: 0;
+}
+
+.variant-text-top .content {
+	padding: 4px;
+	padding-top: 1rem;
+	padding-left: 0.75rem;
+	justify-content: flex-end;
+}
+
+.variant-text-top .title {
+	font-size: 16px;
+	color: var(--metricValue);
+}
+
+/* ====================  VARIANT: TEXT-BOTTOM ====================  */
+
+.variant-text-bottom {
+	height: 220px;
+	backdrop-filter: blur(36px);
+}
+
+.variant-text-bottom .image {
+	position: absolute;
+	inset: 0;
+}
+
+.variant-text-bottom .content {
+	height: 100%;
+	justify-content: flex-end;
+}
+
+.variant-text-bottom .title {
+	font-size: 16px;
+	color: var(--cardBackground);
+}
+
+.variant-text-bottom .metadata {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+	padding: 8px;
+	color: var(--cardBackground);
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.variant-text-bottom .metadataItem {
+	font-size: 13px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 4px;
+}
+
+/* ====================  VARIANT: TEXT-OVERLAY ====================  */
+
+.variant-text-overlay {
+	position: relative;
+	height: 330px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	background-size: contain;
+}
+
+
+.variant-text-overlay .overlayContent {
+	position: relative;
+	bottom: 0;
+	background: var(--cardBackground);
+	border-radius: 16px;
+
+}
+
+.variant-text-overlay .title {
+	font-size: 16px;
+	color: var(--metricValue);
+	margin-bottom: 0.5rem;
+}
+
+.variant-text-overlay .metadata {
+	display: flex;
+	flex-direction: column;
+}
+
+.variant-text-overlay .metadataItem {
+	font-size: 13px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 4px;
+	color: var(--metricValue);
+}
+
+/* ====================  RESPONSIVE DESIGN ====================  */
+
+@media (min-width: 1024px) {
+	.card {
+		flex: 1 1 calc(25% - 1rem);
+	}
+}
+
+@media (max-width: 768px) {
+	.card {
+		width: 100%;
+		margin: 0 auto;
+		max-width: 400px;
+	}
+
+	.variant-text-top {
+		height: 180px;
+	}
+
+	.variant-text-bottom {
+		height: 180px;
+	}
+
+	.variant-text-overlay {
+		height: 300px;
+	}
+
+
+	.variant-text-top .title {
+		font-size: 15px;
+	}
+
+	.variant-text-bottom .title {
+		font-size: 13px;
+	}
+
+	.variant-text-overlay .title {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 480px) {
+	.variant-text-top {
+		height: 180px;
+	}
+
+	.variant-text-bottom {
+		height: 180px;
+	}
+
+	.variant-text-overlay {
+		height: 280px;
+	}
+
+
+	.variant-text-top .title {
+		font-size: 14px;
+	}
+
+	.variant-text-bottom .title {
+		font-size: 12px;
+	}
+
+	.variant-text-overlay .title {
+		font-size: 14px;
+	}
+
+	.variant-text-overlay .metadataItem {
+		font-size: 12px;
+	}
+}

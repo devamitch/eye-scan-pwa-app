@@ -1,0 +1,109 @@
+/* Specialists page specific loading styles */
+
+.container {
+	padding: 2rem;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.header {
+	margin-bottom: 1rem;
+}
+
+/* Categories Section */
+.categoriesSection {
+	margin: 2rem 0 3rem 0;
+}
+
+.categoriesGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+	gap: 1rem;
+}
+
+.categoryCard {
+	background: var(--skeletonBackground);
+	border: 1px solid var(--subtleCardBackground);
+	padding: 1.5rem 1rem;
+	border-radius: var(--border-radii);
+}
+
+/* Search Section */
+.searchSection {
+	margin: 2rem 0;
+}
+
+.searchBar {
+	margin-bottom: 1rem;
+}
+
+.filters {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+
+/* Specialists Grid */
+.specialistsGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 2rem;
+	margin-top: 2rem;
+}
+
+.specialistCard {
+	background-color: var(--skeletonBackground);
+	border: 1px solid var(--subtleCardBackground);
+	border-radius: var(--border-radii);
+	overflow: hidden;
+}
+
+.specialistInfo {
+	padding: 1rem;
+	background: var(--skeletonBackground);
+	border-radius: 0 0 var(--border-radii) var(--border-radii);
+}
+
+/* Mobile Overrides */
+@media (max-width: 1024px) {
+	.categoriesGrid {
+		grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	}
+
+	.specialistsGrid {
+		grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+		gap: 1.5rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		padding: 1rem;
+	}
+
+	.categoriesGrid {
+		grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+		gap: 0.75rem;
+	}
+
+	.filters {
+		flex-direction: column;
+	}
+
+	/* Full width on mobile for search and filters */
+	.searchBar > div,
+	.filters > div {
+		width: 100% !important;
+	}
+
+	.specialistsGrid {
+		grid-template-columns: 1fr;
+		gap: 1.5rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.categoriesGrid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}

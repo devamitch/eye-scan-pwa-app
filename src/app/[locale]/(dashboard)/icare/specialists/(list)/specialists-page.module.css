@@ -1,0 +1,359 @@
+.container {
+	padding: 2rem;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.header {
+	margin-bottom: 1rem;
+}
+
+.backButton {
+	background: var(--cardBackground);
+	border: 1px solid var(--lightText);
+	padding: 0.75rem 1.5rem;
+	border-radius: var(--border-radii);
+	font-size: 14px;
+	color: var(--metricValue);
+	cursor: pointer;
+	font-family: var(--default-font-family);
+	font-weight: 500;
+}
+
+
+/* Categories Section */
+.categoriesSection {
+	margin: 2rem 0 3rem 0;
+}
+
+.categoriesTitle {
+	color: var(--metricValue);
+	font-size: 18px;
+	font-weight: 600;
+	margin: 0 0 1.5rem 0;
+}
+
+.categoriesGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+	gap: 1rem;
+}
+
+.categoryCard {
+	background: var(--cardBackground);
+	border: 2px solid var(--subtleCardBackground);
+	padding: 1.5rem 1rem;
+	border-radius: var(--border-radii);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5rem;
+	cursor: pointer;
+	text-align: center;
+}
+
+
+
+
+.categoryIcon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--lowValue);
+}
+
+.categoryCard.active .categoryIcon {
+	color: white;
+}
+
+.categoryName {
+	font-size: 13px;
+	font-weight: 600;
+	color: inherit;
+}
+
+.categoryCard.active .categoryName {
+	color: white;
+}
+
+.categoryCount {
+	font-size: 12px;
+	opacity: 0.7;
+}
+
+/* Search Section */
+.searchSection {
+	margin: 2rem 0;
+}
+
+.searchBar {
+	margin-bottom: 1rem;
+}
+
+.searchInput {
+	width: 100%;
+	padding: 1rem 1.5rem;
+	border: 1px solid var(--lightText);
+	border-radius: var(--border-radii);
+	font-size: 15px;
+	color: var(--metricValue);
+	background: var(--cardBackground);
+	transition: all 0.3s ease;
+}
+
+.searchInput:focus {
+	border-color: var(--lightMetricValue);
+
+
+}
+
+.filters {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+
+.select {
+	padding: 0.75rem 1rem;
+	border: 1px solid var(--lightText);
+	border-radius: var(--border-radii);
+	font-size: 14px;
+	color: var(--metricValue);
+	background: var(--cardBackground);
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.select:focus {
+	outline: none;
+	border-color: var(--lightMetricValue);
+}
+
+.resetButton {
+	padding: 0.75rem 1.5rem;
+	background: var(--subtleCardBackground);
+	border: 1px solid var(--lightText);
+	border-radius: var(--border-radii);
+	font-size: 14px;
+	color: var(--metricValue);
+	cursor: pointer;
+	font-weight: 500;
+}
+
+
+
+.resultsCount {
+	margin-top: 1rem;
+	color: var(--lightText);
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.filterLabel {
+	color: var(--lightMetricValue);
+	font-weight: 600;
+}
+
+/* Specialists Grid */
+.specialistsGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 2rem;
+	margin-top: 2rem;
+}
+
+.specialistCard {
+	background-color: var(--cardBackground);
+	border: 4px solid var(--subtleCardBackground);
+	border-radius: var(--border-radii);
+	cursor: pointer;
+}
+
+
+.specialistInfo {
+	padding: 0.5rem 1rem;
+	background: var(--cardBackground);
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.specialistName {
+	color: var(--metricValue);
+	font-size: 16px;
+	font-weight: 700;
+	margin: 0;
+	line-height: 1.3;
+}
+
+.specialistNameKr {
+	color: var(--lightText);
+	font-size: 13px;
+}
+
+.specialistSpecialty {
+	color: var(--metricValue);
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.specialistHospital {
+	color: var(--lightMetricValue);
+	font-size: 13px;
+	display: flex;
+	align-items: center;
+	gap: 0.35rem;
+}
+
+.icon {
+	color: var(--lowValue);
+}
+
+.specialistStats {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+
+.rating {
+	color: #eab308;
+	font-size: 14px;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	gap: 0.25rem;
+}
+
+.starIcon {
+	color: #eab308;
+	margin-bottom: 1px;
+}
+
+.reviews {
+	color: var(--lightText);
+	font-size: 13px;
+}
+
+.specialistMeta {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 0.5rem;
+	border-top: 1px solid var(--subtleCardBackground);
+}
+
+.experience {
+	color: var(--lightText);
+	font-size: 12px;
+	display: flex;
+	align-items: center;
+	gap: 0.35rem;
+}
+
+.fee {
+	color: var(--metricValue);
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.emptyState {
+	text-align: center;
+	padding: 4rem 2rem;
+	color: var(--lightText);
+}
+
+.emptyState p {
+	font-size: 18px;
+	margin-bottom: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+	.categoriesGrid {
+		grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	}
+
+	.specialistsGrid {
+		grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+		gap: 1.5rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		padding: 1rem;
+	}
+
+	.categoriesGrid {
+		grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+		gap: 0.75rem;
+	}
+
+	.categoryCard {
+		padding: 1rem 0.75rem;
+	}
+
+	.categoryIcon {
+		font-size: 28px;
+	}
+
+	.filters {
+		flex-direction: column;
+	}
+
+	.select {
+		width: 100%;
+	}
+
+	.specialistsGrid {
+		grid-template-columns: 1fr;
+		gap: 1.5rem;
+	}
+
+	.specialistName {
+		font-size: 14px;
+	}
+
+	.specialistNameKr {
+		font-size: 13px;
+	}
+
+	.specialistSpecialty {
+		font-size: 13px;
+	}
+
+	.specialistHospital {
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 480px) {
+	.backButton {
+		padding: 0.5rem 1rem;
+		font-size: 13px;
+	}
+
+	.categoriesGrid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.specialistInfo{
+		padding: 0.5rem 0.75rem;
+	}
+
+	.specialistName {
+		font-size: 12px;
+	}
+
+	.specialistNameKr {
+		font-size: 11px;
+	}
+
+	.specialistSpecialty {
+		font-size: 12px;
+	}
+
+	.specialistHospital {
+		font-size: 11px;
+	}
+}

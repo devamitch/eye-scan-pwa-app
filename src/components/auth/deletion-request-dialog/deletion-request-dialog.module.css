@@ -1,0 +1,36 @@
+.container {
+	text-align: center;
+	padding: 25px;
+    background-color: var(--cardBackground);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.title {
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: var(--metricValue);
+}
+
+.description {
+	font-size: 1rem;
+	color: var(--metricValue);
+}
+
+.buttonContainer {
+	display: flex;
+	flex-direction: row;
+	gap: 0.75rem;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+	.container {
+		padding: 0.75rem;
+	}
+    .buttonContainer {
+        flex-direction: column;
+    }
+}

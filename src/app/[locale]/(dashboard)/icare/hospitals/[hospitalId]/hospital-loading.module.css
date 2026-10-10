@@ -1,0 +1,188 @@
+/* Hospital detail specific loading styles */
+
+.container {
+	padding: 2rem;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.hero {
+	position: relative;
+	height: 450px;
+	border-radius: 24px;
+	overflow: hidden;
+	margin-bottom: 2.5rem;
+}
+
+.heroOverlaySkeleton {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	background: var(--skeletonBackground);
+	padding: 3rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.heroStats {
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.mainGrid {
+	display: grid;
+	grid-template-columns: 1fr 400px;
+	gap: 3rem;
+	align-items: start;
+}
+
+.leftColumn {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+
+.rightColumn {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.section {
+	margin-bottom: 0;
+}
+
+/* Specialties List */
+.specialtiesList {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+}
+
+/* Services Grid */
+.servicesGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+	gap: 1rem;
+}
+
+.serviceItem {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 1rem;
+	background: var(--skeletonBackground);
+	border: 1px solid var(--border-color);
+	border-radius: 16px;
+}
+
+/* Specialists Grid */
+.specialistsGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+	gap: 1.5rem;
+}
+
+.specialistCardWrapper {
+	border-radius: 20px;
+	overflow: hidden;
+	background-color: #fff;
+	border: 4px solid #fff;
+}
+
+.specialistInfo {
+	padding: 1rem;
+	/* background-color: var(--skeletonBackground); */
+	border-top: none;
+	border-radius: 0 0 20px 20px;
+}
+
+/* Sidebar Cards */
+.bookingCard,
+.sidebarCard {
+	background: var(--skeletonBackground);
+	border-radius: 20px;
+	padding: 1.5rem;
+	border: 1px solid var(--border-color);
+}
+
+.ctaButtons {
+	display: flex;
+	flex-direction: column;
+}
+
+.quickInfoItem {
+	display: flex;
+	gap: 1rem;
+	align-items: flex-start;
+	padding: 1rem 0;
+	border-bottom: 1px solid var(--border-subtle);
+}
+
+.quickInfoItem:last-child {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+.mapContainer {
+	border-radius: 20px;
+	overflow: hidden;
+	border: 1px solid var(--border-color);
+	height: 450px;
+}
+
+/* Mobile Overrides */
+@media (max-width: 1024px) {
+	.mainGrid {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+
+	.hero {
+		height: 350px;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		padding: 1rem;
+	}
+
+	.hero {
+		height: 380px;
+		margin-bottom: 1.5rem;
+		border-radius: 16px;
+	}
+
+	.heroOverlaySkeleton {
+		padding: 1.25rem;
+	}
+
+	.heroStats {
+		gap: 0.5rem;
+	}
+
+	.servicesGrid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 0.5rem;
+	}
+
+	.serviceItem {
+		padding: 0.75rem;
+	}
+
+	.leftColumn {
+		gap: 2rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.servicesGrid {
+		grid-template-columns: 1fr;
+	}
+}

@@ -1,0 +1,1216 @@
+{
+  "metadata": {
+    "appName": "oLo",
+    "title": "oLo - Giám sát Sức khỏe Mắt bằng AI",
+    "titleTemplate": "%s - oLo",
+    "description": "Giám sát sức khỏe mắt tiên tiến được hỗ trợ bởi AI giúp đội ngũ của bạn khỏe mạnh, tập trung và hoạt động tốt nhất."
+  },
+  "common": {
+    "loading": "Đang tải...",
+    "retry": "Thử lại",
+    "error": "Lỗi:",
+    "success": "Thành công!",
+    "cancel": "Hủy",
+    "save": "Lưu",
+    "close": "Đóng",
+    "back": "Quay lại",
+    "next": "Tiếp theo",
+    "previous": "Trước đó",
+    "notAvailable": "Không có sẵn",
+    "minutes": "phút",
+    "screenTime": "Thời gian màn hình",
+    "language": "Ngôn ngữ",
+    "changeLanguage": "Thay đổi ngôn ngữ"
+  },
+  "pathnames": {
+    "/": "/",
+    "/dashboard": "/dashboard",
+    "/live": "/live",
+    "/icare": "/icare",
+    "/history": "/history",
+    "/settings": "/settings",
+    "/profile": "/profile",
+    "/signin": "/signin",
+    "/register": "/register",
+    "/about": "/about",
+    "/contact": "/contact",
+    "/privacy": "/privacy",
+    "/terms": "/terms",
+    "/help": "/help",
+    "/faq": "/faq",
+    "/blog": "/blog",
+    "/news": "/news",
+    "/products": "/products",
+    "/services": "/services",
+    "/pricing": "/pricing",
+    "/features": "/features",
+    "/download": "/download",
+    "/upload": "/upload",
+    "/search": "/search",
+    "/cart": "/cart",
+    "/checkout": "/checkout",
+    "/orders": "/orders",
+    "/wishlist": "/wishlist",
+    "/notifications": "/notifications",
+    "/messages": "/messages",
+    "/friends": "/friends",
+    "/groups": "/groups",
+    "/events": "/events",
+    "/calendar": "/calendar",
+    "/tasks": "/tasks",
+    "/projects": "/projects",
+    "/team": "/team",
+    "/reports": "/reports",
+    "/analytics": "/analytics",
+    "/insights": "/insights",
+    "/resources": "/resources",
+    "/tutorials": "/tutorials",
+    "/guides": "/guides",
+    "/support": "/support",
+    "/feedback": "/feedback",
+    "/reviews": "/reviews",
+    "/ratings": "/ratings",
+    "/community": "/community",
+    "/forum": "/forum",
+    "/chat": "/chat",
+    "/video": "/video",
+    "/audio": "/audio",
+    "/images": "/images",
+    "/documents": "/documents"
+  },
+  "strainLevels": {
+    "low": "Thấp",
+    "moderate": "Trung bình",
+    "high": "Cao",
+    "veryHigh": "Rất cao",
+    "tired": "Mệt mỏi",
+    "sleepy": "Buồn ngủ",
+    "exhausted": "Kiệt sức"
+  },
+  "units": {
+    "blinksPerMin": "nhịp/phút",
+    "percentage": "%",
+    "years": "tuổi",
+    "level": "mức",
+    "bpm": "bpm",
+    "close": "đóng",
+    "strain": "căng thẳng",
+    "ratio": "tỷ lệ",
+    "mm": "mm",
+    "min": "phút"
+  },
+  "highUsage": {
+    "title": "Sử dụng nhiều",
+    "description": "Bạn đã vượt quá giới hạn sử dụng khuyến nghị",
+    "warning": "Cảnh báo: Sử dụng kéo dài có thể gây mỏi mắt",
+    "recommendation": "Nghỉ ngơi và thư giãn mắt",
+    "duration": "Thời gian sử dụng cao",
+    "level": "Mức độ cường độ sử dụng"
+  },
+  "header": {
+    "logoText": "oLo",
+    "signInButton": "Đăng nhập",
+    "getStartedButton": "Bắt đầu",
+    "downloadButton": "Tải ứng dụng"
+  },
+  "hero": {
+    "heading": "oLo:",
+    "highlight": "Nhìn tốt hơn. Làm việc thông minh hơn.",
+    "subheading": "Sức khỏe mắt được hỗ trợ bởi AI giúp đội ngũ của bạn khỏe mạnh, tập trung và hoạt động tốt nhất.",
+    "getStartedButton": "Bắt đầu",
+    "learnMoreButton": "Tìm hiểu thêm",
+    "imageAlt": "Hình ảnh trang chủ"
+  },
+  "navigation": {
+    "sidebar": {
+      "logoText": "oLo",
+      "dashboard": "Bảng điều khiển",
+      "liveFeed": "Quét oLo",
+      "icare": "Chăm sóc oLo",
+      "history": "Lịch sử",
+      "settings": "Cài đặt"
+    },
+    "navbar": {
+      "searchPlaceholder": "Tìm kiếm...",
+      "profile": "Hồ sơ",
+      "settings": "Cài đặt",
+      "logout": "Đăng xuất",
+      "userMenuLabel": "Menu người dùng",
+      "profileAlt": "Hồ sơ"
+    },
+    "pages": {
+      "home": "Trang chủ",
+      "dashboard": "Bảng điều khiển",
+      "live": "Quét oLo",
+      "icare": "Chăm sóc oLo",
+      "profile": "Hồ sơ",
+      "settings": "Cài đặt",
+      "signin": "Đăng nhập",
+      "register": "Đăng ký",
+      "history": "Lịch sử",
+      "offline": "Ngoại tuyến",
+      "unknown": "Trang",
+      "notifications": "Cài đặt thông báo"
+    }
+  },
+  "auth": {
+    "register": {
+      "title": "Tạo tài khoản của bạn",
+      "subtitle": "Tham gia với chúng tôi để truy cập các tính năng chăm sóc mắt cao cấp",
+      "nameLabel": "Họ và tên",
+      "namePlaceholder": "Nhập họ và tên của bạn",
+      "emailLabel": "Địa chỉ email",
+      "emailPlaceholder": "Nhập email của bạn",
+      "passwordLabel": "Mật khẩu",
+      "passwordPlaceholder": "Tạo mật khẩu (tối thiểu 6 ký tự)",
+      "confirmPasswordLabel": "Xác nhận mật khẩu",
+      "confirmPasswordPlaceholder": "Xác nhận mật khẩu của bạn",
+      "termsCheckboxText": "Tôi đồng ý với",
+      "termsLinkText": "Điều khoản dịch vụ",
+      "andText": "và",
+      "privacyLinkText": "Chính sách bảo mật",
+      "loadingButtonText": "Đang tạo tài khoản...",
+      "submitButtonText": "Tạo tài khoản",
+      "signInLinkText": "Đã có tài khoản?",
+      "signInText": "Đăng nhập",
+      "successMessage": "Đăng ký thành công! Vui lòng kiểm tra email để xác minh tài khoản của bạn.",
+      "socialDividerText": "HOẶC Đăng ký với",
+      "continueWithApple": "Tiếp tục với Apple",
+      "validationErrors": {
+        "allFieldsRequired": "Tất cả các trường đều bắt buộc.",
+        "passwordMinLength": "Mật khẩu phải có ít nhất 4 ký tự.",
+        "passwordMismatch": "Mật khẩu không khớp.",
+        "invalidEmail": "Vui lòng nhập địa chỉ email hợp lệ.",
+        "termsRequired": "Bạn phải chấp nhận các điều khoản và điều kiện."
+      },
+      "firebaseErrors": {
+        "emailInUse": "Email này đã được đăng ký. Vui lòng thử đăng nhập.",
+        "weakPassword": "Mật khẩu nên mạnh hơn (và ít nhất 4 ký tự).",
+        "invalidEmail": "Vui lòng nhập địa chỉ email hợp lệ.",
+        "operationNotAllowed": "Đăng ký tạm thời bị vô hiệu hóa. Vui lòng thử lại sau.",
+        "networkError": "Lỗi mạng. Vui lòng kiểm tra kết nối và thử lại.",
+        "configurationError": "Lỗi cấu hình Firebase. Vui lòng liên hệ hỗ trợ.",
+        "defaultError": "Đã xảy ra lỗi không mong muốn. Vui lòng thử lại."
+      }
+    },
+    "login": {
+      "title": "Chào mừng trở lại",
+      "subtitle": "Đăng nhập để truy cập bảng điều khiển chăm sóc mắt của bạn",
+      "emailLabel": "Địa chỉ email",
+      "emailPlaceholder": "Nhập email của bạn",
+      "passwordLabel": "Mật khẩu",
+      "passwordPlaceholder": "Nhập mật khẩu của bạn",
+      "forgotPasswordText": "Quên mật khẩu?",
+      "signInButton": "Đăng nhập",
+      "loadingButtonText": "Đang đăng nhập...",
+      "successMessage": "Đăng nhập thành công! Đang chuyển hướng đến bảng điều khiển của bạn...",
+      "createAccountText": "Chưa có tài khoản?",
+      "createAccountLink": "Tạo tài khoản",
+      "resetTitle": "Đặt lại mật khẩu",
+      "resetSubtitle": "Nhập email của bạn để nhận liên kết đặt lại mật khẩu",
+      "sendResetButton": "Gửi liên kết đặt lại",
+      "resetLoadingText": "Đang gửi...",
+      "backToLoginButton": "Quay lại đăng nhập",
+      "resetSuccessTitle": "Email đã được gửi!",
+      "resetSuccessMessage": "Email đặt lại mật khẩu đã được gửi! Vui lòng kiểm tra hộp thư đến của bạn để biết hướng dẫn.",
+      "socialDividerText": "HOẶC Đăng nhập với",
+      "continueWithApple": "Tiếp tục với Apple",
+      "validationErrors": {
+        "emptyFields": "Vui lòng điền vào tất cả các trường.",
+        "invalidEmail": "Vui lòng nhập địa chỉ email hợp lệ."
+      },
+      "firebaseErrors": {
+        "userNotFound": "Không tìm thấy tài khoản với địa chỉ email này. Vui lòng kiểm tra email của bạn hoặc đăng ký tài khoản mới.",
+        "wrongPassword": "Mật khẩu không đúng. Vui lòng thử lại hoặc đặt lại mật khẩu nếu bạn quên.",
+        "invalidCredentials": "Thông tin đăng nhập không hợp lệ. Vui lòng kiểm tra email và mật khẩu của bạn.",
+        "invalidEmailFormat": "Định dạng địa chỉ email không đúng. Vui lòng kiểm tra lỗi chính tả.",
+        "accountDisabled": "Tài khoản này đã bị vô hiệu hóa. Vui lòng liên hệ hỗ trợ để được hỗ trợ.",
+        "tooManyAttempts": "Quá nhiều lần đăng nhập thất bại. Vui lòng thử lại sau hoặc đặt lại mật khẩu.",
+        "networkError": "Kết nối mạng thất bại. Vui lòng kiểm tra kết nối internet và thử lại.",
+        "configurationError": "Lỗi cấu hình Firebase. Vui lòng liên hệ hỗ trợ.",
+        "defaultError": "Đã xảy ra lỗi không mong muốn. Vui lòng thử lại hoặc liên hệ hỗ trợ nếu sự cố vẫn tiếp diễn."
+      }
+    }
+  },
+  "dashboard": {
+    "eyeScanReportTitle": "Báo cáo quét mắt",
+    "articlesTitle": "Bài viết",
+    "errorMessage": "Lỗi:",
+    "retryButton": "Thử lại"
+  },
+  "eyeMetrics": {
+    "labels": {
+      "blinkRate": "Tần suất nháy mắt",
+      "eyeClosure": "Nhắm mắt",
+      "eyeStrain": "Mỏi mắt",
+      "tiredness": "Mệt mỏi",
+      "batteryLevel": "Pin oLo",
+      "attentionLevel": "Mức độ chú ý",
+      "eyeAge": "Điểm quầng thâm",
+      "faceAge": "Tuổi khuôn mặt",
+      "eyeAspectRatio": "Tỷ lệ khung hình mắt",
+      "pupilDilation": "Giãn đồng tử",
+      "squintIntensity": "Cường độ nheo mắt",
+      "strainLevel": "Mức độ căng thẳng",
+      "attention": "Chú ý",
+      "rednessScore": "Điểm đỏ mắt",
+      "drynessScore": "Điểm khô mắt",
+      "proximityScore": "Khoảng cách màn hình",
+      "lightIntensity": "Cường độ ánh sáng"
+    },
+    "recommendedValues": {
+      "blinkRate": "15-20 nhịp/phút",
+      "eyeClosure": "< 5%",
+      "eyeStrain": "Thấp",
+      "tiredness": "Thấp",
+      "attentionLevel": "> 80%",
+      "eyeAge": "Bằng tuổi thật",
+      "faceAge": "25-35 tuổi",
+      "eyeAspectRatio": "2.5-4.0",
+      "pupilDilation": "2-8 mm",
+      "squintIntensity": "< 10%",
+      "rednessScore": "Thấp",
+      "drynessScore": "Thấp",
+      "proximityScore": "> 30 cm",
+      "darkCircleScore": "Thấp",
+      "lightIntensity": "Trung bình"
+    },
+    "stream": {
+      "title": "Luồng chỉ số mắt trực tiếp",
+      "liveIndicator": "TRỰC TIẾP",
+      "currentMetrics": "Chỉ số hiện tại",
+      "placeholder": "Chưa có dữ liệu. Bắt đầu theo dõi để xem các chỉ số thời gian thực."
+    },
+    "attentionStates": {
+      "good": "Tốt",
+      "poor": "Kém"
+    },
+    "strainLevels": {
+      "low": "Thấp",
+      "moderate": "Trung bình",
+      "high": "Cao"
+    }
+  },
+  "reports": {
+    "card": {
+      "title": "Sức khỏe mắt tổng thể",
+      "subtitle": "Độ tin cậy trung bình:",
+      "statsFooter": "Dựa trên quét và thói quen gần đây"
+    },
+    "conditions": {
+      "high": "Phát hiện mỏi mắt - Nghỉ ngơi",
+      "moderate": "Mỏi mắt trung bình - Xem xét nghỉ ngơi",
+      "normal": "Không phát hiện tình trạng"
+    },
+    "statusLabels": {
+      "normal": "Bình thường",
+      "blinkRate": "Tần suất nháy mắt hơi thấp",
+      "eyeStrain": "Phát hiện mỏi mắt"
+    },
+    "statusTypes": {
+      "blinkRate": "Tần suất nháy mắt",
+      "eyeStrain": "Mỏi mắt"
+    },
+    "normalRanges": {
+      "blinkRate": "Phạm vi bình thường: 15-20 nhịp/phút",
+      "perclose": "Phần trăm nhắm mắt"
+    },
+    "page": {
+      "reportNotFound": "Không tìm thấy báo cáo",
+      "reportNotFoundDesc": "Không thể tìm thấy báo cáo được yêu cầu.",
+      "backToHistory": "← Quay lại lịch sử",
+      "eyeScanReport": "Báo cáo quét mắt",
+      "overallStatus": "Trạng thái tổng thể"
+    }
+  },
+  "history": {
+    "title": "Lịch sử và báo cáo",
+    "subtitle": "Xem lại quét của bạn và quản lý hồ sơ sức khỏe mắt của bạn",
+    "viewingData": "Xem dữ liệu cho:",
+    "today": "Hôm nay",
+    "eyeCareReport": "Báo cáo chăm sóc mắt",
+    "monthlyReport": "Báo cáo sức khỏe mắt hàng tháng",
+    "annualReport": "Báo cáo sức khỏe mắt hàng năm",
+    "allRecordsSecure": "Tất cả hồ sơ được mã hóa an toàn",
+    "exportAllData": "Xuất tất cả dữ liệu",
+    "timeFilters": {
+      "today": "Hôm nay",
+      "week": "Tuần này",
+      "month": "Tháng này",
+      "year": "Năm nay"
+    },
+    "viewModes": {
+      "chartView": "Xem biểu đồ",
+      "tableView": "Xem bảng",
+      "chart": "Biểu đồ",
+      "table": "Bảng"
+    },
+    "actions": {
+      "quickView": "Xem nhanh",
+      "viewReport": "Xem báo cáo"
+    },
+    "tableHeaders": {
+      "date": "Ngày",
+      "results": "Kết quả",
+      "actions": "Hành động"
+    },
+    "emptyState": {
+      "noHistory": "Không tìm thấy lịch sử quét cho",
+      "selectedDate": "ngày đã chọn",
+      "startTracking": "Bắt đầu theo dõi trên bảng điều khiển để xem lịch sử của bạn ở đây"
+    },
+    "chartTitles": {
+      "blinkRate": "Tần suất nháy mắt",
+      "eyeClosure": "Nhắm mắt",
+      "overallHealth": "Sức khỏe mắt tổng thể",
+      "attention": "Chú ý",
+      "strainLevel": "Mức độ căng thẳng",
+      "eyeAge": "Tuổi mắt",
+      "screenTime": "Thời gian màn hình",
+      "distanceCm": "Khoảng cách màn hình",
+      "screenTimeMinutes": "Thời gian màn hình (phút)",
+      "screenDistance": "Khoảng cách màn hình"
+    },
+    "lastUpdate": "Cập nhật lần cuối"
+  },
+  "live": {
+    "errorRetry": "Thử lại",
+    "loadingStates": {
+      "startingTracking": "Đang bắt đầu theo dõi...",
+      "initializingCamera": "Đang khởi tạo camera..."
+    },
+    "hero": {
+      "title": "Chào mừng đến với theo dõi mắt trực tiếp",
+      "subtitle": "Giám sát sức khỏe mắt của bạn trong thời gian thực và nhận đánh giá tức thì"
+    },
+    "eyeScan": {
+      "title": "Hoàn thành quét mắt nhanh 30 giây",
+      "subtitle": "Đặt mình thoải mái và nhìn vào camera trong quá trình quét",
+      "startButton": "Bắt đầu quét",
+      "stopButton": "Dừng quét",
+      "completedTitle": "Quét hoàn tất!",
+      "completedSubtitle": "Đây là tóm tắt sức khỏe mắt của bạn",
+      "beforeScan": "Trước khi quét",
+      "afterScan": "Sau khi quét",
+      "closeButton": "Đóng",
+      "metricLabels": {
+        "blinkRate": "Tần suất nháy mắt",
+        "eyeClosure": "Nhắm mắt",
+        "strainLevel": "Mức độ căng thẳng",
+        "attention": "Chú ý"
+      },
+      "attentionStates": {
+        "good": "Tốt",
+        "poor": "Kém"
+      }
+    }
+  },
+  "icare": {
+    "sectionTitles": {
+      "eyeExercises": "Bài tập mắt",
+      "eyeProducts": "Sản phẩm chăm sóc mắt",
+      "eyeSpecialists": "Chuyên gia về mắt"
+    },
+    "exerciseModal": {
+      "comparisonTitle": "So sánh kết quả bài tập",
+      "buttons": {
+        "markComplete": "Đánh dấu bài tập hoàn thành",
+        "restart": "Khởi động lại bài tập"
+      }
+    },
+    "hospitalModal": {
+      "actionButtons": {
+        "website": "Trang web",
+        "directions": "Chỉ đường",
+        "reviews": "Đánh giá"
+      },
+      "detailLabels": {
+        "address": "Địa chỉ:",
+        "getThere": "Đến đó:",
+        "hours": "Giờ:"
+      }
+    },
+    "productModal": {
+      "aboutProduct": "Về sản phẩm này",
+      "buyNow": "Mua ngay trên Amazon"
+    }
+  },
+  "profile": {
+    "sectionTitles": {
+      "recentEyeScan": "Quét mắt gần đây",
+      "scanHistory": "Lịch sử quét",
+      "personalisedAdvice": "Lời khuyên được cá nhân hóa"
+    },
+    "recentScan": {
+      "title": "Lịch sử báo cáo quét mắt",
+      "confidenceLabel": "Độ tin cậy trung bình:",
+      "viewFullReport": "Xem báo cáo đầy đủ"
+    },
+    "scanHistory": {
+      "title": "Lịch sử báo cáo quét mắt",
+      "description": "Kết quả quét mắt trong quá khứ và theo dõi thay đổi"
+    },
+    "profileCard": {
+      "ctaButton": "Hãy kiểm tra sức khỏe mắt của bạn",
+      "years": "tuổi"
+    }
+  },
+  "settings": {
+    "sectionTitles": {
+      "accountSettings": "Cài đặt tài khoản",
+      "aiScanSettings": "Cài đặt quét AI",
+      "discoveryPreferences": "Tùy chọn khám phá",
+      "notification": "Thay đổi tùy chọn thông báo",
+      "privacyData": "Bảo mật và dữ liệu",
+      "helpSupport": "Trợ giúp và hỗ trợ"
+    },
+    "accountSettings": {
+      "profileInfo": "Thông tin hồ sơ",
+      "changePassword": "Thay đổi mật khẩu",
+      "passwordDialog": {
+        "currentPassword": "Mật khẩu hiện tại",
+        "newPassword": "Mật khẩu mới",
+        "confirmPassword": "Xác nhận mật khẩu mới",
+        "changingText": "Đang thay đổi...",
+        "changePasswordButton": "Thay đổi mật khẩu",
+        "cancelButton": "Hủy"
+      }
+    },
+    "discoveryPreferences": {
+      "specialistRegion": "Khu vực chuyên gia",
+      "productCategories": "Danh mục sản phẩm",
+      "regions": {
+        "canada": "Canada",
+        "korea": "Hàn Quốc"
+      },
+      "categories": {
+        "glasses": "Kính",
+        "gadgets": "Tiện ích",
+        "supplements": "Bổ sung",
+        "eyedrops": "Thuốc nhỏ mắt"
+      }
+    },
+    "aiScanSettings": {
+      "autoSaveScanHistory": "Tự động lưu lịch sử quét",
+      "autoShareScans": "Tự động chia sẻ quét",
+      "predictionSensitivity": "Độ nhạy dự đoán"
+    },
+    "notifications": {
+      "screenDistanceAlert": "Cảnh báo khoảng cách màn hình",
+      "screenDistanceAlertDesc": "Cảnh báo khi khoảng cách màn hình nhỏ hơn 30cm trong hơn 30 giây",
+      "eyeStrainAlert": "Cảnh báo mỏi mắt",
+      "eyeStrainAlertDesc": "Cảnh báo khi mỏi mắt cao trong hơn 15 phút",
+      "batteryDrainingAlert": "Cảnh báo cạn pin oLo",
+      "batteryDrainingAlertDesc": "Cảnh báo khi pin cạn hơn 10% trong ít hơn 15 phút hoặc giảm xuống dưới 20%",
+      "lightingAlert": "Cảnh báo ánh sáng không tối ưu",
+      "lightingAlertDesc": "Cảnh báo khi cường độ ánh sáng nhỏ hơn 100",
+      "screenTimeAlert": "Cảnh báo thời gian màn hình",
+      "screenTimeAlertDesc": "Cảnh báo khi thời gian màn hình vượt quá 6 giờ hoặc hơn 50 phút trong bất kỳ giờ nào",
+      "saveChanges": "Lưu thay đổi",
+      "settingsUpdated": "Cài đặt thông báo đã được cập nhật thành công"
+    },
+    "privacyData": {
+      "appPermission": "Quyền ứng dụng",
+      "downloadMyData": "Tải xuống dữ liệu của tôi",
+      "deleteMyData": "Xóa dữ liệu của tôi"
+    },
+    "helpSupport": {
+      "faq": "Câu hỏi thường gặp",
+      "contactUs": "Liên hệ với chúng tôi",
+      "termsPrivacy": "Điều khoản và chính sách bảo mật"
+    },
+    "logOut": "Đăng xuất"
+  },
+  "homepage": {
+    "workCard": {
+      "headerTitle": "Tin cậy và bằng chứng",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Độ tin cậy dựa trên khoa học",
+          "description": "Áp dụng các chỉ số mỏi mắt được xác thực lâm sàng dựa trên nghiên cứu được đánh giá ngang hàng để đảm bảo độ chính xác và tính toàn diện."
+        },
+        {
+          "number": "2",
+          "title": "Được xây dựng bởi các chuyên gia y tế và AI",
+          "description": "Được phát triển bởi các kỹ sư y tế và AI/ML với kinh nghiệm phong phú về sức khỏe kỹ thuật số và sức khỏe tại nơi làm việc."
+        },
+        {
+          "number": "3",
+          "title": "Bảo mật cấp doanh nghiệp",
+          "description": "Tất cả dữ liệu mắt được xử lý cục bộ. Không có video hoặc hình ảnh cá nhân được lưu trữ hoặc truyền đi. Chỉ các chỉ số tổng hợp được mã hóa được chia sẻ."
+        }
+      ],
+      "buttonText": "Bắt đầu hành trình sức khỏe mắt của bạn"
+    },
+    "sections": {
+      "whyEyeHealthSection": {
+        "title": "Tại sao sức khỏe mắt quan trọng tại nơi làm việc",
+        "imageAlt": "Một người làm việc thoải mái tại bàn làm việc được chiếu sáng tốt",
+        "problemSubheading": "Vấn đề",
+        "impactSubheading": "Tác động"
+      },
+      "featuresSection": {
+        "title": "oLo làm gì"
+      },
+      "organizationBenefitsSection": {
+        "title": "Lợi ích cho tổ chức"
+      },
+      "builtForBusinessSection": {
+        "title": "Được xây dựng cho doanh nghiệp",
+        "imageAlt": "Máy tính để bàn hiển thị bảng điều khiển phân tích"
+      },
+      "whoWeWorkWithSection": {
+        "title": "Chúng tôi làm việc với ai"
+      },
+      "corporateWellnessSection": {
+        "title": "ROI sức khỏe doanh nghiệp",
+        "beforeSubheading": "Trước oLo:",
+        "afterSubheading": "Sau oLo:"
+      },
+      "downloadSection": {
+        "title": "Tải xuống oLo cho máy tính để bàn",
+        "subtitle": "Nhận trải nghiệm máy tính để bàn đầy đủ với các ứng dụng gốc của chúng tôi cho Windows và macOS",
+        "description": "Giám sát sức khỏe mắt của bạn với các ứng dụng máy tính để bàn mạnh mẽ của chúng tôi. Có sẵn cho Windows 10/11 và macOS.",
+        "button": "Xem tất cả các tùy chọn tải xuống"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "Được tạo ra với sự quan tâm bởi AuraCore",
+    "faqText": "Câu hỏi thường gặp",
+    "privacyText": "Chính sách bảo mật",
+    "contactText": "Liên hệ với chúng tôi",
+    "disclaimerText": "Tuyên bố từ chối trách nhiệm"
+  },
+  "data": {
+    "articles": [
+      {
+        "title": "Dấu hiệu bạn cần kiểm tra mắt",
+        "description": "Kiểm tra mắt định kỳ rất quan trọng để duy trì sức khỏe mắt."
+      },
+      {
+        "title": "Cách ngăn ngừa mỏi mắt kỹ thuật số",
+        "description": "Tìm hiểu cách ngăn ngừa mỏi mắt kỹ thuật số từ màn hình."
+      },
+      {
+        "title": "Cách ngăn ngừa mỏi mắt kỹ thuật số",
+        "description": "Mẹo giữ mắt khỏe mạnh mỗi ngày."
+      }
+    ],
+    "exercises": [
+      {
+        "title": "Giảm mỏi mắt 1 phút",
+        "description": "Học các kỹ thuật tự nhiên để giảm mỏi mắt và cải thiện sức khỏe mắt của bạn."
+      },
+      {
+        "title": "Bài tập mắt để cải thiện thị lực",
+        "description": "Làm chủ quy tắc 20-20-20 để cho mắt của bạn nghỉ ngơi thường xuyên từ thời gian màn hình."
+      },
+      {
+        "title": "Bài tập mắt để cải thiện tầm nhìn",
+        "description": "Cải thiện mô hình nháy mắt và độ ẩm mắt với các bài tập này."
+      }
+    ],
+    "hospitals": [
+      {
+        "title": "Visionmax Eye Centre",
+        "description": "Bác sĩ Daniel Senekal - Điều chỉnh thị lực bằng laser và điều trị mắt khô"
+      },
+      {
+        "title": "Stellar Integrated Eye Care Clinic",
+        "description": "Bác sĩ Miral Mehta - Chăm sóc mắt toàn diện và chăm sóc mắt nhi khoa"
+      },
+      {
+        "title": "Alberta Retina Consultants",
+        "description": "Bác sĩ Parampal Grewal - Chăm sóc mắt toàn diện và bệnh mắt di truyền"
+      },
+      {
+        "title": "King LASIK",
+        "description": "Bác sĩ Mahta Rasouli - Phẫu thuật LASIK và chuyên gia PRK"
+      }
+    ],
+    "products": [
+      {
+        "key": "1",
+        "title": "Thuốc nhỏ mắt bôi trơn Systane Ultra",
+        "description": "Giảm mắt khô lâu dài",
+        "detailedDescription": "Systane Ultra cung cấp giảm mắt khô lâu dài với bảo vệ kéo dài. Công thức không có chất bảo quản này giúp khôi phục màng nước mắt tự nhiên và mang lại sự thoải mái lên đến 12 giờ. Hoàn hảo cho người dùng máy tính và những người trải qua mỏi mắt kỹ thuật số."
+      },
+      {
+        "key": "2",
+        "title": "Kính chặn ánh sáng xanh",
+        "description": "Kính máy tính để giảm mỏi mắt",
+        "detailedDescription": "Kính chặn ánh sáng xanh chuyên nghiệp được thiết kế để giảm mỏi mắt, đau đầu và cải thiện chất lượng giấc ngủ. Có lớp phủ chống chói và bảo vệ UV. Lý tưởng cho việc sử dụng máy tính kéo dài và các phiên chơi game."
+      },
+      {
+        "key": "3",
+        "title": "Thuốc nhỏ mắt TheraTears",
+        "description": "Điều trị mắt khô tiên tiến",
+        "detailedDescription": "TheraTears cung cấp giảm ngay lập tức và lâu dài cho mắt khô, kích ứng. Công thức cân bằng điện giải độc đáo này bắt chước nước mắt tự nhiên và giúp khôi phục cân bằng độ ẩm tự nhiên của mắt. An toàn để sử dụng hàng ngày."
+      },
+      {
+        "key": "4",
+        "title": "Thanh đèn màn hình máy tính",
+        "description": "Đèn màn hình để giảm mỏi mắt",
+        "detailedDescription": "Thanh đèn màn hình chuyên nghiệp cung cấp ánh sáng tối ưu cho công việc máy tính trong khi giảm chói màn hình và mỏi mắt. Có độ sáng và nhiệt độ màu có thể điều chỉnh để phù hợp với môi trường làm việc của bạn suốt cả ngày."
+      },
+      {
+        "key": "5",
+        "title": "Bổ sung sức khỏe mắt Omega-3",
+        "description": "Hỗ trợ mắt khô và sức khỏe thị lực",
+        "detailedDescription": "Bổ sung omega-3 cao cấp được công thức đặc biệt cho sức khỏe mắt. Chứa EPA và DHA để hỗ trợ sản xuất nước mắt và giảm viêm. Được chứng minh lâm sàng giúp các triệu chứng mắt khô và duy trì sức khỏe mắt tổng thể."
+      }
+    ],
+    "businessFeatures": [
+      {
+        "title": "Tích hợp liền mạch",
+        "description": "Hoạt động với webcam tiêu chuẩn trên máy tính xách tay và máy tính để bàn."
+      },
+      {
+        "title": "Chính sách linh hoạt",
+        "description": "Căn chỉnh lời nhắc nghỉ ngơi với hướng dẫn sức khỏe của công ty."
+      },
+      {
+        "title": "Bảng điều khiển phân tích",
+        "description": "Xem các chỉ số sức khỏe thời gian thực trên các đội."
+      },
+      {
+        "title": "Bảo mật theo thiết kế",
+        "description": "Tuân thủ GDPR, PIPEDA và SOC 2."
+      }
+    ],
+    "benefitsOrganisation": [
+      {
+        "title": "Tăng năng suất",
+        "description": "Ngăn chặn sự sụt giảm sự tập trung và hiệu suất do mắt mệt mỏi"
+      },
+      {
+        "title": "Hỗ trợ sức khỏe",
+        "description": "Một sáng kiến sức khỏe có thể đo lường giúp cải thiện sự thoải mái và tham gia hàng ngày"
+      },
+      {
+        "title": "Giảm chi phí sức khỏe",
+        "description": "Ngăn ngừa mỏi mắt mãn tính và cắt giảm các cuộc khám mắt và nghỉ ốm"
+      },
+      {
+        "title": "Cho thấy bạn quan tâm",
+        "description": "Định vị công ty của bạn như một nhà tuyển dụng chủ động coi trọng sức khỏe nhân viên"
+      }
+    ],
+    "features": [
+      {
+        "title": "Giám sát liên tục",
+        "description": "Hoạt động trong nền qua webcam hiện có - không làm gián đoạn quy trình làm việc."
+      },
+      {
+        "title": "Phân tích thời gian thực",
+        "description": "Sử dụng AI để phát hiện các dấu hiệu căng thẳng sớm: tần suất nháy mắt giảm, mỏi mỏi nhìn và tác động chói màn hình."
+      },
+      {
+        "title": "Hướng dẫn chủ động",
+        "description": "Đề xuất các bài tập ngắn, được cá nhân hóa, nghỉ ngơi vi mô và điều chỉnh công thái học - trước khi căng thẳng ảnh hưởng đến hiệu suất."
+      },
+      {
+        "title": "Thông tin chi tiết dựa trên dữ liệu",
+        "description": "Tạo báo cáo có thể hành động cho cá nhân và thông tin chi tiết ẩn danh tổng hợp cho nhân sự và người dẫn đầu sức khỏe."
+      }
+    ],
+    "whoWeWorkWith": [
+      {
+        "title": "Văn phòng doanh nghiệp",
+        "description": "Các đội lớn làm việc trên màn hình cả ngày."
+      },
+      {
+        "title": "Trung tâm cuộc gọi",
+        "description": "Thời gian màn hình nhiều, nhiều ca làm việc."
+      },
+      {
+        "title": "Đại lý công nghệ và sáng tạo",
+        "description": "Giờ thiết kế, mã hóa và chỉnh sửa kéo dài."
+      },
+      {
+        "title": "Đội từ xa và kết hợp",
+        "description": "Hỗ trợ sức khỏe bất kể nhân viên làm việc ở đâu."
+      }
+    ],
+    "problemPoints": [
+      "Nhân viên dành 6-10 giờ mỗi ngày trước màn hình.",
+      "Mỏi mắt kỹ thuật số gây đau đầu, mệt mỏi và tập trung kém.",
+      "Khó chịu về thị lực là yếu tố hàng đầu trong mất năng suất."
+    ],
+    "impactPoints": ["Ngày ốm cao hơn", "Năng suất thấp hơn", "Tăng kiệt sức"],
+    "beforeOLo": [
+      "1 trong 3 nhân viên báo cáo đau đầu hoặc khó chịu mắt hàng ngày",
+      "Trung bình 20-40 phút mất năng suất mỗi người mỗi ngày"
+    ],
+    "afterOLo": [
+      "Giảm các triệu chứng được báo cáo trong vòng 2 tuần",
+      "Điểm tham gia cao hơn trong các cuộc khảo sát sức khỏe",
+      "Ghi nhận giảm nghỉ ốm liên quan đến mỏi mắt"
+    ],
+    "mockReport": {
+      "date": "16 tháng 6 năm 2025, 14:37",
+      "confidenceAverage": 95,
+      "condition": "Không phát hiện tình trạng",
+      "percentage": 85
+    },
+    "mockReportBrief": {
+      "date": "16 tháng 6 năm 2025, 14:37",
+      "confidenceAverage": 95,
+      "condition": "Không phát hiện tình trạng"
+    },
+    "reportHistory": [
+      {
+        "date": "17 tháng 7 năm 2025",
+        "time": "8:45 SA",
+        "result": "Bình thường",
+        "status": "Bình thường",
+        "action": "Xem nhanh"
+      },
+      {
+        "date": "10 tháng 7 năm 2025",
+        "time": "8:07 SA",
+        "result": "Tần suất nháy mắt hơi thấp",
+        "status": "Tần suất nháy mắt",
+        "action": "Xem báo cáo"
+      },
+      {
+        "date": "13 tháng 7 năm 2025",
+        "time": "6:45 SA",
+        "result": "Phát hiện mỏi mắt",
+        "status": "Mỏi mắt",
+        "action": "Xem báo cáo"
+      },
+      {
+        "date": "10 tháng 7 năm 2025",
+        "time": "8:07 SA",
+        "result": "Tần suất nháy mắt hơi thấp",
+        "status": "Tần suất nháy mắt",
+        "action": "Xem báo cáo"
+      },
+      {
+        "date": "13 tháng 7 năm 2025",
+        "time": "6:45 SA",
+        "result": "Phát hiện mỏi mắt",
+        "status": "Mỏi mắt",
+        "action": "Xem báo cáo"
+      }
+    ]
+  },
+  "metricInfoPopup": {
+    "sectionTitles": {
+      "healthyRange": "Phạm vi khỏe mạnh",
+      "whyItMatters": "Tại sao nó quan trọng",
+      "quickWin": "Chiến thắng nhanh"
+    }
+  },
+  "metricInfoData": {
+    "overallEyeHealth": {
+      "title": "Sức khỏe mắt tổng thể",
+      "description": "Một ảnh chụp nhanh về cảm giác thoải mái và tập trung của mắt bạn ngay bây giờ.",
+      "healthy": "Xanh / 75%+.",
+      "whyItMatters": "Mắt thoải mái = tập trung ổn định hơn, ít đau đầu hơn.",
+      "quickWin": "Thực hiện đặt lại 90 giây - nháy mắt hoàn toàn, nhấp nước, nhìn qua phòng và đẩy màn hình lùi một inch."
+    },
+    "blinkRate": {
+      "title": "Tần suất nháy mắt",
+      "description": "Nháy mắt là ngụm nước của mắt.",
+      "healthy": "15-20 mỗi phút.",
+      "whyItMatters": "Quá ít → khô và mờ; quá nhiều → kích ứng.",
+      "quickWin": "Thử gợi ý 20-20-20 (mỗi 20 phút, nhìn cách 20 feet trong 20 giây) và thêm một ghi chú dính nhỏ có nội dung 'Nháy mắt.'"
+    },
+    "eyeStrain": {
+      "title": "Mỏi mắt",
+      "description": "Báo hiệu rằng mắt bạn đang làm việc quá sức.",
+      "healthy": "Giữ ở mức thấp.",
+      "whyItMatters": "Căng thẳng cao làm chậm đọc và kích hoạt đau đầu.",
+      "quickWin": "Đặt màn hình cách khoảng một cánh tay và tăng kích thước văn bản +10-25%; giảm chói nếu có thể."
+    },
+    "tiredness": {
+      "title": "Mệt mỏi",
+      "description": "Đồng hồ đo năng lượng của mắt bạn.",
+      "healthy": "Thấp và ổn định.",
+      "whyItMatters": "Mắt mệt mỏi trượt vào tiêu điểm lỏng lẻo và làm chậm bạn.",
+      "quickWin": "Đi bộ 2 phút, nước, sau đó là một cuộc chạy nước rút tập trung mới 25-40 phút."
+    },
+    "attentionLevel": {
+      "title": "Mức độ chú ý",
+      "description": "Bạn đang khóa hay trôi?",
+      "healthy": "80%+ trong công việc sâu.",
+      "whyItMatters": "Chú ý tốt hơn = đầu ra nhanh hơn, sạch hơn.",
+      "quickWin": "Toàn màn hình nhiệm vụ, đóng các tab lạc, im lặng ping và chạy một bộ hẹn giờ ngắn."
+    },
+    "rednessScore": {
+      "title": "Điểm đỏ mắt",
+      "description": "Phần trắng của mắt bạn trông rõ ràng và sáng như thế nào.",
+      "healthy": "Thấp: Khỏe mạnh; Trung bình: Cần chú ý; Cao: Nghỉ ngơi.",
+      "whyItMatters": "Đỏ mắt thường có nghĩa là khô, chà xát hoặc dị ứng.",
+      "quickWin": "Nháy mắt hoàn toàn, hydrat, thêm một chút độ ẩm phòng; nếu nó ở mức thấp trong nhiều ngày, hãy xem xét thuốc nhỏ mắt bôi trơn hoặc kiểm tra nhanh."
+    },
+    "drynessScore": {
+      "title": "Điểm khô mắt",
+      "description": "Mắt của bạn có thể cảm thấy ẩm và thoải mái như thế nào, dựa trên thói quen nháy mắt và màn hình.",
+      "healthy": "Thấp: Khỏe mạnh; Trung bình: Cần chú ý; Cao: Nghỉ ngơi.",
+      "whyItMatters": "Mắt khô cắn, mờ và hút tập trung.",
+      "quickWin": "20-20-20, không khí phòng nhẹ nhàng hơn (máy tạo ẩm nếu bạn có), và 'nháy mắt đầy đủ' (cảm thấy mí mắt gặp nhau)."
+    },
+    "screenDistance": {
+      "title": "Khoảng cách màn hình",
+      "description": "Bạn ngồi gần màn hình như thế nào.",
+      "healthy": "Khoảng một cánh tay (50-70 cm).",
+      "whyItMatters": "Quá gần = căng thẳng hơn và ít nháy mắt hơn.",
+      "quickWin": "Đẩy màn hình lùi và zoom văn bản một chốt."
+    },
+    "darkCircleScore": {
+      "title": "Điểm quầng thâm",
+      "description": "Bóng tối dưới mắt thường tăng đột biến với giấc ngủ thấp hoặc ngày màn hình dài.",
+      "healthy": "Thấp và ổn định.",
+      "whyItMatters": "Cho bạn biết khi phục hồi đang tụt hậu.",
+      "quickWin": "Đèn cuối cùng vào ban đêm, thời gian đi ngủ ổn định hơn và nghỉ ngơi màn hình buổi tối ngắn."
+    },
+    "squintIntensity": {
+      "title": "Cường độ nheo mắt",
+      "description": "Cường độ nheo mắt đo lường mắt của bạn thu hẹp bao nhiêu khi tập trung vào màn hình - một dấu hiệu của nỗ lực trực quan hoặc độ nhạy chói.",
+      "healthy": "Thấp: Thoải mái; Trung bình: Cần chú ý; Cao: Nghỉ ngơi.",
+      "whyItMatters": "Cường độ nheo mắt cao cho thấy mỏi mắt, ánh sáng kém hoặc chói màn hình. Nheo mắt duy trì làm mệt cơ mắt và có thể dẫn đến đau đầu hoặc mờ mắt.",
+      "quickWin": "Giảm độ sáng, tăng kích thước văn bản và nháy mắt có ý thức. Lùi lại vài inch hoặc điều chỉnh ánh sáng để làm mềm chói."
+    },
+    "batteryLevel": {
+      "title": "Pin oLo",
+      "description": "Pin oLo hiển thị mức năng lượng tổng thể của mắt bạn - bắt đầu đầy mỗi ngày và cạn khi mệt mỏi thị giác tích tụ từ thời gian màn hình, căng thẳng và thói quen kém.",
+      "healthy": "Trên 50%.",
+      "whyItMatters": "Pin oLo thấp có nghĩa là mắt và tập trung của bạn đang thấp. Nó phản ánh cơ mắt mệt mỏi, giảm chú ý và phục hồi chậm theo thời gian.",
+      "quickWin": "Nghỉ ngơi ngoài màn hình ngắn, nháy mắt thường xuyên hơn và nhìn vào khoảng cách mỗi 20 phút. Vài phút nghỉ ngơi có thể nhanh chóng sạc lại pin oLo của bạn."
+    },
+    "lightIntensity": {
+      "title": "Cường độ ánh sáng",
+      "description": "Cường độ ánh sáng của mắt bạn.",
+      "healthy": "Trung bình.",
+      "whyItMatters": "Cường độ ánh sáng cao có nghĩa là mắt bạn đang chịu áp lực.",
+      "quickWin": "Đặt màn hình vuông với cửa sổ để tránh chói.",
+      "recommendedAdjustments": "Điều chỉnh ánh sáng của bạn để tránh chói."
+    }
+  },
+  "contactUs": {
+    "title": "Liên hệ với chúng tôi",
+    "subtitle": "Liên lạc với đội ngũ của chúng tôi",
+    "companyName": "Aura Medical Technologies Inc.",
+    "email": "Email",
+    "emailAddress": "preetam@AuraCoremedical.com",
+    "description": "Có câu hỏi về oLo hoặc cần hỗ trợ? Chúng tôi ở đây để giúp đỡ. Liên hệ với chúng tôi và chúng tôi sẽ trả lời bạn càng sớm càng tốt.",
+    "officeHours": "Giờ làm việc",
+    "officeHoursText": "Thứ Hai - Thứ Sáu: 9:00 SA - 5:00 CH PST"
+  },
+  "privacyPolicy": {
+    "title": "Chính sách bảo mật",
+    "lastUpdated": "Cập nhật lần cuối: Tháng 12 năm 2024",
+    "intro": "Tại oLo, chúng tôi coi trọng quyền riêng tư của bạn. Chính sách bảo mật này giải thích cách chúng tôi thu thập, sử dụng và bảo vệ thông tin cá nhân của bạn khi bạn sử dụng ứng dụng giám sát sức khỏe mắt được hỗ trợ bởi AI của chúng tôi.",
+    "sections": {
+      "dataCollection": {
+        "title": "Thông tin chúng tôi thu thập",
+        "content": "Chúng tôi thu thập thông tin cần thiết để cung cấp dịch vụ giám sát sức khỏe mắt của chúng tôi:",
+        "items": [
+          "Dữ liệu camera để theo dõi và phân tích mắt theo thời gian thực (chỉ được xử lý cục bộ)",
+          "Chỉ số sức khỏe mắt bao gồm tần suất nháy mắt, mức độ căng thẳng và chỉ số mệt mỏi",
+          "Dữ liệu sử dụng như thời lượng phiên và sử dụng tính năng",
+          "Thông tin tài khoản bao gồm địa chỉ email và cài đặt hồ sơ",
+          "Thông tin thiết bị bao gồm loại trình duyệt và hệ điều hành"
+        ]
+      },
+      "dataUsage": {
+        "title": "Cách chúng tôi sử dụng thông tin của bạn",
+        "content": "Dữ liệu của bạn được sử dụng độc quyền để:",
+        "items": [
+          "Cung cấp giám sát và phân tích sức khỏe mắt theo thời gian thực",
+          "Tạo thông tin chi tiết và khuyến nghị được cá nhân hóa cho sức khỏe mắt của bạn",
+          "Theo dõi xu hướng sức khỏe mắt của bạn theo thời gian",
+          "Cải thiện thuật toán AI và chất lượng dịch vụ của chúng tôi",
+          "Gửi cho bạn thông báo và lời nhắc về sức khỏe mắt của bạn"
+        ]
+      },
+      "dataSecurity": {
+        "title": "Bảo mật dữ liệu",
+        "content": "Chúng tôi thực hiện các biện pháp bảo mật tiêu chuẩn ngành để bảo vệ dữ liệu của bạn:",
+        "items": [
+          "Tất cả xử lý camera được thực hiện cục bộ trên thiết bị của bạn - không có video hoặc hình ảnh được truyền đi",
+          "Truyền dữ liệu được mã hóa bằng các giao thức HTTPS và TLS",
+          "Xác thực an toàn và kiểm soát truy cập bảo vệ tài khoản của bạn",
+          "Kiểm tra bảo mật thường xuyên và cập nhật đảm bảo tính toàn vẹn hệ thống",
+          "Không chia sẻ dữ liệu cá nhân với bên thứ ba mà không có sự đồng ý rõ ràng của bạn"
+        ]
+      },
+      "yourRights": {
+        "title": "Quyền của bạn",
+        "content": "Bạn có quyền:",
+        "items": [
+          "Truy cập dữ liệu cá nhân của bạn bất cứ lúc nào thông qua cài đặt tài khoản của bạn",
+          "Tải xuống bản sao dữ liệu của bạn ở định dạng di động",
+          "Yêu cầu xóa dữ liệu của bạn vĩnh viễn",
+          "Chọn không nhận thông báo và thông tin không cần thiết",
+          "Kiểm soát quyền camera và vô hiệu hóa theo dõi mắt bất cứ lúc nào"
+        ]
+      },
+      "dataRetention": {
+        "title": "Lưu giữ dữ liệu",
+        "content": "Chúng tôi chỉ lưu giữ dữ liệu của bạn miễn là cần thiết để cung cấp dịch vụ của chúng tôi và tuân thủ các nghĩa vụ pháp lý. Bạn có thể yêu cầu xóa dữ liệu của mình bất cứ lúc nào thông qua trang cài đặt. Dữ liệu camera không bao giờ được lưu trữ - nó chỉ tồn tại trong bộ nhớ thiết bị trong quá trình xử lý."
+      },
+      "contact": {
+        "title": "Liên hệ với chúng tôi",
+        "content": "Nếu bạn có câu hỏi về Chính sách bảo mật này hoặc thực tiễn dữ liệu của chúng tôi, vui lòng liên hệ với chúng tôi tại preetam@AuraCoremedical.com. Chúng tôi cam kết giải quyết mối quan tâm của bạn và bảo vệ quyền riêng tư của bạn."
+      }
+    }
+  },
+  "faq": {
+    "title": "Câu hỏi thường gặp",
+    "subtitle": "Tìm câu trả lời cho các câu hỏi phổ biến về oLo",
+    "questions": [
+      {
+        "question": "oLo là gì?",
+        "answer": "oLo là một ứng dụng web tiến bộ được hỗ trợ bởi AI giám sát và cải thiện sức khỏe mắt của bạn theo thời gian thực. Sử dụng thị giác máy tính tiên tiến và thuật toán MediaPipe, nó theo dõi các chỉ số mắt của bạn, cung cấp thông tin chi tiết được cá nhân hóa và giúp ngăn ngừa mỏi mắt kỹ thuật số."
+      },
+      {
+        "question": "Theo dõi mắt hoạt động như thế nào?",
+        "answer": "oLo sử dụng camera thiết bị của bạn và thuật toán AI tiên tiến để phát hiện và phân tích mắt của bạn theo thời gian thực. Tất cả xử lý được thực hiện cục bộ trên thiết bị của bạn cho sự riêng tư. Ứng dụng theo dõi các chỉ số như tần suất nháy mắt, mỏi mắt, mệt mỏi và khoảng cách xem để cung cấp giám sát sức khỏe mắt toàn diện."
+      },
+      {
+        "question": "Dữ liệu camera của tôi có an toàn không?",
+        "answer": "Có, hoàn toàn. Tất cả xử lý camera được thực hiện cục bộ trên thiết bị của bạn. Nguồn cấp dữ liệu camera của bạn không bao giờ được gửi đến máy chủ của chúng tôi. Chỉ các chỉ số sức khỏe mắt ẩn danh được lưu trữ để giúp bạn theo dõi tiến trình của mình theo thời gian."
+      },
+      {
+        "question": "oLo theo dõi những chỉ số nào?",
+        "answer": "oLo theo dõi nhiều chỉ số sức khỏe mắt bao gồm tần suất nháy mắt, mức độ mỏi mắt, điểm khô và đỏ mắt, quầng thâm, mức độ mệt mỏi và mệt mỏi, khoảng cách màn hình, chỉ số chú ý và tập trung, và cường độ nheo mắt. Nó cũng cung cấp điểm pin sức khỏe mắt tổng thể."
+      },
+      {
+        "question": "Điểm pin hoạt động như thế nào?",
+        "answer": "Pin sức khỏe mắt của bạn bắt đầu ở mức 100 phần trăm và giảm với mỏi mắt, thời gian màn hình kéo dài và thói quen xem kém. Nó tăng với nghỉ ngơi, nháy mắt đúng cách và thực hành chăm sóc mắt tốt. Pin giúp bạn hiểu sức khỏe mắt tổng thể của mình một cái nhìn thoáng qua."
+      },
+      {
+        "question": "Chế độ Picture-in-Picture là gì?",
+        "answer": "Chế độ Picture-in-Picture cho phép bạn giữ theo dõi mắt hoạt động trong khi làm việc trên các nhiệm vụ khác. Cửa sổ theo dõi vẫn hiển thị trong một lớp phủ nhỏ, vì vậy bạn có thể giám sát sức khỏe mắt của mình mà không cần giữ ứng dụng đầy đủ mở."
+      },
+      {
+        "question": "Tôi có thể sử dụng oLo trên bất kỳ thiết bị nào không?",
+        "answer": "oLo hoạt động trên bất kỳ thiết bị nào có camera và trình duyệt web hiện đại bao gồm Chrome, Safari, Edge và Firefox. Đây là một ứng dụng web tiến bộ, vì vậy bạn có thể cài đặt nó trên thiết bị của mình để có trải nghiệm giống ứng dụng gốc trên máy tính để bàn, di động và máy tính bảng."
+      },
+      {
+        "question": "Tôi nên nghỉ ngơi bao lâu một lần?",
+        "answer": "Chúng tôi khuyên bạn nên tuân theo quy tắc 20-20-20: mỗi 20 phút, nhìn vào thứ gì đó cách 20 feet trong ít nhất 20 giây. oLo sẽ gửi cho bạn thông báo thông minh khi nó phát hiện mỏi mắt liên tục hoặc khi bạn đã ở trên màn hình quá lâu."
+      },
+      {
+        "question": "oLo có sẵn bằng nhiều ngôn ngữ không?",
+        "answer": "Có, oLo hiện có sẵn bằng tiếng Anh, tiếng Nhật và tiếng Hàn. Bạn có thể thay đổi ngôn ngữ trong trang cài đặt bất cứ lúc nào."
+      },
+      {
+        "question": "Làm cách nào để cải thiện điểm sức khỏe mắt của tôi?",
+        "answer": "Để cải thiện sức khỏe mắt của bạn: nghỉ ngơi thường xuyên bằng quy tắc 20-20-20, duy trì khoảng cách xem đúng (50-70 cm), nháy mắt thường xuyên và đầy đủ, điều chỉnh độ sáng màn hình và kích thước văn bản, giảm chói, giữ nước và ngủ đủ giấc."
+      },
+      {
+        "question": "Tôi nên làm gì nếu theo dõi mắt không hoạt động?",
+        "answer": "Nếu theo dõi mắt không hoạt động: đảm bảo quyền camera được cấp trong cài đặt trình duyệt của bạn, kiểm tra xem bạn có đủ ánh sáng, đặt mình rõ ràng trước camera, thử làm mới trang và kiểm tra xem các ứng dụng khác có đang sử dụng camera của bạn không."
+      },
+      {
+        "question": "oLo có hoạt động ngoại tuyến không?",
+        "answer": "oLo yêu cầu kết nối internet ban đầu để tải ứng dụng. Sau khi tải, theo dõi mắt hoạt động ngoại tuyến vì tất cả xử lý được thực hiện cục bộ trên thiết bị của bạn. Tuy nhiên, đồng bộ hóa dữ liệu với tài khoản của bạn yêu cầu kết nối internet."
+      },
+      {
+        "question": "Theo dõi mắt của oLo chính xác như thế nào?",
+        "answer": "oLo sử dụng thuật toán MediaPipe tiên tiến được phát triển bởi Google Research, cung cấp theo dõi mắt chính xác cao cho mục đích sức khỏe. Mặc dù không phải là thiết bị chẩn đoán cấp y tế, oLo được thiết kế để giúp bạn giám sát các mẫu sức khỏe và duy trì thói quen màn hình lành mạnh."
+      },
+      {
+        "question": "Tôi có thể sử dụng oLo với kính hoặc kính áp tròng không?",
+        "answer": "Có, oLo hoạt động với cả kính và kính áp tròng. Để có kết quả tốt nhất với kính, đảm bảo có chói tối thiểu trên ống kính của bạn và đặt mình sao cho mắt của bạn nhìn rõ vào camera."
+      },
+      {
+        "question": "oLo có phải là thiết bị y tế không?",
+        "answer": "Không, oLo là một ứng dụng sức khỏe và không phải là thiết bị y tế. Nó không chẩn đoán, điều trị hoặc ngăn ngừa bất kỳ tình trạng y tế nào. oLo được thiết kế để giúp bạn giám sát sức khỏe mắt của mình và duy trì thói quen màn hình lành mạnh. Luôn tham khảo ý kiến chuyên gia chăm sóc mắt đủ điều kiện cho các mối quan tâm y tế."
+      },
+      {
+        "question": "Làm cách nào để xóa tài khoản và dữ liệu của tôi?",
+        "answer": "Bạn có thể xóa tài khoản của mình và tất cả dữ liệu liên quan bất cứ lúc nào thông qua Cài đặt, sau đó Tài khoản, sau đó Xóa tài khoản. Sau khi xóa, tất cả dữ liệu của bạn sẽ được xóa vĩnh viễn khỏi máy chủ của chúng tôi trong vòng 30 ngày."
+      },
+      {
+        "question": "oLo có chia sẻ dữ liệu của tôi với bên thứ ba không?",
+        "answer": "Không, chúng tôi không chia sẻ dữ liệu cá nhân của bạn với bên thứ ba mà không có sự đồng ý rõ ràng của bạn. Dữ liệu camera của bạn không bao giờ được truyền hoặc lưu trữ. Chỉ các thống kê sức khỏe tổng hợp, ẩn danh có thể được sử dụng cho mục đích nghiên cứu và cải tiến sản phẩm."
+      },
+      {
+        "question": "Yêu cầu hệ thống cho oLo là gì?",
+        "answer": "oLo yêu cầu một thiết bị có camera và trình duyệt web hiện đại. Trình duyệt được đề xuất bao gồm Chrome 90 trở lên, Safari 14 trở lên, Edge 90 trở lên hoặc Firefox 88 trở lên. Kết nối internet ổn định được khuyến nghị cho trải nghiệm tốt nhất."
+      },
+      {
+        "question": "Nhiều người có thể sử dụng oLo trên cùng một thiết bị không?",
+        "answer": "Có, nhiều người có thể sử dụng oLo trên cùng một thiết bị bằng cách tạo các tài khoản riêng biệt. Mỗi người dùng sẽ có theo dõi sức khỏe và thông tin chi tiết được cá nhân hóa của riêng họ. Chỉ cần đăng xuất và đăng nhập bằng thông tin xác thực khác nhau để chuyển đổi giữa các tài khoản."
+      },
+      {
+        "question": "Làm cách nào để liên hệ hỗ trợ?",
+        "answer": "Bạn có thể liên hệ với đội ngũ hỗ trợ của chúng tôi tại preetam@AuraCoremedical.com hoặc thông qua trang Liên hệ với chúng tôi trên trang web của chúng tôi. Chúng tôi thường phản hồi trong vòng 24 đến 48 giờ trong các ngày làm việc."
+      }
+    ]
+  },
+  "termsPage": {
+    "title": "Điều khoản và điều kiện",
+    "lastUpdated": "Cập nhật lần cuối: Tháng 12 năm 2024",
+    "intro": "Vui lòng đọc kỹ các Điều khoản và Điều kiện này trước khi sử dụng ứng dụng oLo được điều hành bởi Aura Medical Technologies Inc. Truy cập và sử dụng dịch vụ của bạn có điều kiện chấp nhận và tuân thủ các Điều khoản này.",
+    "sections": {
+      "acceptance": {
+        "title": "1. Chấp nhận điều khoản",
+        "content": "Bằng cách truy cập hoặc sử dụng oLo, bạn đồng ý bị ràng buộc bởi các Điều khoản và Điều kiện này. Nếu bạn không đồng ý với bất kỳ phần nào của các điều khoản này, bạn không được truy cập dịch vụ."
+      },
+      "description": {
+        "title": "2. Mô tả dịch vụ",
+        "content": "oLo là một ứng dụng sức khỏe cung cấp dịch vụ giám sát sức khỏe mắt và theo dõi thời gian màn hình. Dịch vụ bao gồm:",
+        "items": [
+          "Theo dõi mắt theo thời gian thực bằng camera thiết bị của bạn",
+          "Giám sát tần suất nháy mắt và theo dõi thời gian màn hình",
+          "Thông tin chi tiết và khuyến nghị sức khỏe được cá nhân hóa",
+          "Lời nhắc nghỉ ngơi và mẹo sức khỏe mắt",
+          "Theo dõi tiến trình và dữ liệu lịch sử"
+        ]
+      },
+      "medicalDisclaimer": {
+        "title": "3. Tuyên bố từ chối trách nhiệm y tế",
+        "content": "QUAN TRỌNG: oLo là một ứng dụng sức khỏe và không phải là thiết bị y tế. Bạn thừa nhận và đồng ý rằng:",
+        "items": [
+          "oLo không chẩn đoán, điều trị, chữa khỏi hoặc ngăn ngừa bất kỳ tình trạng hoặc bệnh y tế nào",
+          "Thông tin được cung cấp chỉ nhằm mục đích sức khỏe chung",
+          "oLo không phải là sự thay thế cho lời khuyên, chẩn đoán hoặc điều trị y tế chuyên nghiệp",
+          "Bạn nên luôn tham khảo ý kiến chuyên gia chăm sóc mắt đủ điều kiện cho các mối quan tâm y tế",
+          "oLo không cung cấp lời khuyên y tế và không nên dựa vào cho các quyết định y tế",
+          "Bất kỳ sự dựa vào thông tin được cung cấp bởi oLo hoàn toàn là rủi ro của riêng bạn"
+        ]
+      },
+      "userResponsibilities": {
+        "title": "4. Trách nhiệm của người dùng",
+        "content": "Bạn đồng ý:",
+        "items": [
+          "Cung cấp thông tin chính xác và đầy đủ khi tạo tài khoản",
+          "Duy trì bảo mật thông tin đăng nhập tài khoản của bạn",
+          "Sử dụng dịch vụ tuân thủ tất cả các luật và quy định hiện hành",
+          "Không sử dụng dịch vụ cho bất kỳ mục đích bất hợp pháp hoặc trái phép nào",
+          "Không can thiệp hoặc làm gián đoạn dịch vụ hoặc máy chủ",
+          "Không cố gắng truy cập trái phép vào bất kỳ phần nào của dịch vụ"
+        ]
+      },
+      "privacyData": {
+        "title": "5. Bảo mật và dữ liệu",
+        "content": "Quyền riêng tư của bạn rất quan trọng đối với chúng tôi. Chính sách bảo mật của chúng tôi giải thích cách chúng tôi thu thập, sử dụng và bảo vệ thông tin cá nhân của bạn. Tất cả xử lý camera được thực hiện cục bộ trên thiết bị của bạn. Không có hình ảnh khuôn mặt hoặc video được truyền hoặc lưu trữ trên máy chủ của chúng tôi. Bằng cách sử dụng oLo, bạn đồng ý với Chính sách bảo mật của chúng tôi có sẵn tại https://olo-care.com/privacy-policy"
+      },
+      "intellectualProperty": {
+        "title": "6. Sở hữu trí tuệ",
+        "content": "Dịch vụ và nội dung, tính năng và chức năng ban đầu của nó là và sẽ vẫn là tài sản độc quyền của Aura Medical Technologies Inc. và người cấp phép của nó. Dịch vụ được bảo vệ bởi bản quyền, nhãn hiệu và các luật khác. Bạn không được sao chép, phân phối, sửa đổi, tạo các tác phẩm phái sinh, hiển thị công khai hoặc khai thác bất kỳ nội dung nào từ dịch vụ mà không có sự cho phép bằng văn bản rõ ràng của chúng tôi."
+      },
+      "limitation": {
+        "title": "7. Giới hạn trách nhiệm",
+        "content": "Trong mọi trường hợp, Aura Medical Technologies Inc., cũng như giám đốc, nhân viên, đối tác, đại lý, nhà cung cấp hoặc chi nhánh của nó, sẽ không chịu trách nhiệm về bất kỳ thiệt hại gián tiếp, ngẫu nhiên, đặc biệt, hậu quả hoặc trừng phạt, bao gồm nhưng không giới hạn, mất lợi nhuận, dữ liệu, sử dụng, lòng tốt hoặc các tổn thất vô hình khác, do truy cập hoặc sử dụng hoặc không thể truy cập hoặc sử dụng dịch vụ của bạn. Điều này bao gồm bất kỳ thông tin sức khỏe hoặc khuyến nghị nào được cung cấp bởi ứng dụng."
+      },
+      "termination": {
+        "title": "8. Chấm dứt",
+        "content": "Chúng tôi có thể chấm dứt hoặc đình chỉ tài khoản của bạn và truy cập vào dịch vụ ngay lập tức, mà không cần thông báo trước hoặc trách nhiệm, vì bất kỳ lý do gì, bao gồm nếu bạn vi phạm các Điều khoản này. Sau khi chấm dứt, quyền sử dụng dịch vụ của bạn sẽ ngay lập tức chấm dứt. Bạn có thể chấm dứt tài khoản của mình bất cứ lúc nào thông qua tính năng xóa tài khoản trong Cài đặt."
+      },
+      "changes": {
+        "title": "9. Thay đổi điều khoản",
+        "content": "Chúng tôi bảo lưu quyền sửa đổi hoặc thay thế các Điều khoản này bất cứ lúc nào theo quyết định riêng của chúng tôi. Chúng tôi sẽ cung cấp thông báo về bất kỳ thay đổi vật chất nào bằng cách đăng các Điều khoản mới trên trang này và cập nhật ngày Cập nhật lần cuối. Việc bạn tiếp tục sử dụng dịch vụ sau những thay đổi đó cấu thành sự chấp nhận các Điều khoản mới."
+      },
+      "governingLaw": {
+        "title": "10. Luật điều chỉnh",
+        "content": "Các Điều khoản này sẽ được điều chỉnh và diễn giải theo luật của khu vực mà Aura Medical Technologies Inc. hoạt động, mà không quan tâm đến các quy định xung đột luật của nó. Việc chúng tôi không thực thi bất kỳ quyền hoặc quy định nào của các Điều khoản này sẽ không được coi là từ bỏ các quyền đó."
+      },
+      "contact": {
+        "title": "11. Liên hệ với chúng tôi",
+        "content": "Nếu bạn có bất kỳ câu hỏi nào về các Điều khoản và Điều kiện này, vui lòng liên hệ với chúng tôi tại support@AuraCoremedical.com"
+      }
+    }
+  },
+  "download": {
+    "title": "Tải xuống oLo - Ứng dụng sức khỏe mắt",
+    "description": "Tải xuống oLo cho iOS, Android, macOS, Windows và Linux. Giám sát sức khỏe mắt của bạn trên tất cả các thiết bị của bạn.",
+    "hero": {
+      "title": "Tải xuống oLo",
+      "subtitle": "Nhận oLo trên tất cả các thiết bị của bạn và bắt đầu giám sát sức khỏe mắt của bạn bất cứ nơi nào bạn làm việc"
+    },
+    "mobile": {
+      "ios": {
+        "title": "Ứng dụng iOS",
+        "description": "Có sẵn cho iPhone và iPad. Theo dõi sức khỏe mắt của bạn ở bất cứ đâu.",
+        "button": "Tải xuống trên App Store"
+      },
+      "android": {
+        "title": "Ứng dụng Android",
+        "description": "Tương thích với các thiết bị Android. Giám sát mắt của bạn khi di chuyển.",
+        "button": "Tải về trên Google Play"
+      }
+    },
+    "desktop": {
+      "macos": {
+        "title": "Ứng dụng macOS",
+        "description": "Ứng dụng gốc cho Mac. Được tối ưu hóa cho Apple Silicon.",
+        "button": "Tải xuống cho Mac"
+      },
+      "windows": {
+        "title": "Ứng dụng Windows",
+        "description": "Hoạt động trên Windows 10 và 11.",
+        "button": "Tải xuống cho Windows"
+      }
+    }
+  },
+  "supportPage": {
+    "title": "Trung tâm hỗ trợ và trợ giúp",
+    "subtitle": "Chúng tôi ở đây để giúp bạn tận dụng tối đa oLo",
+    "email": {
+      "title": "Hỗ trợ qua email",
+      "description": "Nhận trợ giúp chi tiết từ đội ngũ hỗ trợ của chúng tôi",
+      "address": "support@AuraCoremedical.com",
+      "responseTime": "Phản hồi trong vòng 24-48 giờ"
+    },
+    "inApp": {
+      "title": "Hỗ trợ trong ứng dụng",
+      "description": "Trợ giúp nhanh trực tiếp trong ứng dụng",
+      "location": "Cài đặt → Trợ giúp và hỗ trợ",
+      "availability": "Có sẵn 24/7"
+    },
+    "helpCenter": {
+      "title": "Trung tâm trợ giúp",
+      "description": "Duyệt qua các bài viết và hướng dẫn",
+      "link": "Truy cập câu hỏi thường gặp",
+      "articles": "Cơ sở kiến thức toàn diện"
+    },
+    "form": {
+      "title": "Gửi tin nhắn cho chúng tôi",
+      "description": "Điền vào biểu mẫu bên dưới và chúng tôi sẽ trả lời bạn càng sớm càng tốt",
+      "nameLabel": "Họ và tên",
+      "namePlaceholder": "Nhập tên của bạn",
+      "emailLabel": "Địa chỉ email",
+      "emailPlaceholder": "Nhập email của bạn",
+      "subjectLabel": "Chủ đề",
+      "subjectPlaceholder": "Chọn một chủ đề",
+      "subjectOptions": [
+        "Vấn đề kỹ thuật",
+        "Tài khoản và thanh toán",
+        "Yêu cầu tính năng",
+        "Bảo mật và an ninh",
+        "Yêu cầu chung",
+        "Báo cáo lỗi",
+        "Phản hồi"
+      ],
+      "messageLabel": "Tin nhắn",
+      "messagePlaceholder": "Mô tả vấn đề hoặc câu hỏi của bạn một cách chi tiết...",
+      "submit": "Gửi tin nhắn",
+      "submitted": "Tin nhắn đã được gửi!",
+      "successMessage": "Cảm ơn bạn đã liên hệ với chúng tôi. Chúng tôi sẽ phản hồi trong vòng 24-48 giờ."
+    },
+    "quickLinks": {
+      "title": "Liên kết nhanh",
+      "faq": "Câu hỏi thường gặp",
+      "faqDescription": "Tìm câu trả lời cho các câu hỏi phổ biến",
+      "privacy": "Chính sách bảo mật",
+      "privacyDescription": "Cách chúng tôi bảo vệ dữ liệu của bạn",
+      "terms": "Điều khoản và điều kiện",
+      "termsDescription": "Điều khoản pháp lý về dịch vụ"
+    },
+    "officeHours": {
+      "title": "Giờ làm việc",
+      "hours": "Thứ Hai - Thứ Sáu: 9:00 SA - 5:00 CH PST",
+      "note": "Chúng tôi thường phản hồi tất cả các yêu cầu trong vòng 24-48 giờ trong các ngày làm việc"
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.container {
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 24px;
+	background-color: var(--cardBackground);
+	border-radius: 16px;
+	
+
+}
+
+.content {
+	padding: 32px;
+}
+
+/* ==================== IMAGE SECTION ==================== */
+.imageContainer {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+
+.imageWrapper {
+	position: relative;
+	width: 120px;
+	height: 120px;
+}
+
+.profileImage {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 4px solid var(--primary-color);
+}
+
+.editIcon {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 36px;
+	height: 36px;
+	background-color: var(--cardBackground);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	color: var(--metricValue);
+}
+
+
+
+.fileInput {
+	display: none;
+}
+
+.formSection {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	margin-bottom: 32px;
+}
+
+.buttonContainer {
+	margin-top: 32px;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 768px) {
+	.container {
+		padding: 16px;
+	}
+
+	.content {
+		padding: 24px;
+	}
+
+	.imageWrapper {
+		width: 100px;
+		height: 100px;
+	}
+
+	.editIcon {
+		width: 32px;
+		height: 32px;
+	}
+
+	.formSection {
+		gap: 20px;
+	}
+}
+
+@media (max-width: 480px) {
+	.content {
+		padding: 20px;
+		border-radius: 12px;
+	}
+
+	.imageWrapper {
+		width: 90px;
+		height: 90px;
+	}
+
+	.editIcon {
+		width: 28px;
+		height: 28px;
+	}
+}

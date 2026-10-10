@@ -1,0 +1,294 @@
+.container {
+	padding: 2rem;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.header {
+	margin-bottom: 1rem;
+}
+
+.backButton {
+	background: var(--cardBackground);
+	border: 1px solid var(--lightText);
+	padding: 0.75rem 1.5rem;
+	border-radius: var(--border-radii);
+	font-size: 14px;
+	color: var(--metricValue);
+	cursor: pointer;
+	font-family: var(--default-font-family);
+	font-weight: 500;
+}
+
+
+
+/* Search Section */
+.searchSection {
+	margin: 2rem 0;
+}
+
+.searchBar {
+	display: flex;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+.searchInput {
+	flex: 1;
+	padding: 1rem 1.5rem;
+	border: 1px solid var(--lightText);
+	border-radius: var(--border-radii);
+	font-size: 15px;
+	color: var(--metricValue);
+	background: var(--cardBackground);
+	transition: all 0.3s ease;
+}
+
+.searchInput:focus {
+
+	border-color: var(--lowValue);
+
+
+}
+
+.mapToggle {
+	padding: 1rem 1.5rem;
+	background: var(--lowValue);
+	color: white;
+	border: none;
+	border-radius: var(--border-radii);
+	font-size: 14px;
+	font-weight: 500;
+	cursor: pointer;
+	white-space: nowrap;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+
+
+.filters {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+
+.select {
+	padding: 0.75rem 1rem;
+	border: 1px solid var(--lightText);
+	border-radius: var(--border-radii);
+	font-size: 14px;
+	color: var(--metricValue);
+	background: var(--cardBackground);
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.select:focus {
+	outline: none;
+	border-color: var(--lowValue);
+}
+
+.resetButton {
+	padding: 0.75rem 1.5rem;
+	background: var(--subtleCardBackground);
+	border: 1px solid var(--lightText);
+	border-radius: var(--border-radii);
+	font-size: 14px;
+	color: var(--metricValue);
+	cursor: pointer;
+	font-weight: 500;
+}
+
+
+.resultsCount {
+	margin-top: 1rem;
+	color: var(--lightText);
+	font-size: 14px;
+	font-weight: 500;
+}
+
+/* Map Section */
+.mapSection {
+	margin: 2rem 0;
+}
+
+/* Hospitals Grid */
+.hospitalsGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+	gap: 2rem;
+	margin-top: 2rem;
+}
+
+
+.hospitalInfo {
+	padding: 0.75rem;
+	background: var(--cardBackground);
+	border-radius:20px ;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.hospitalName {
+	color: var(--metricValue);
+	font-size: 16px;
+	font-weight: 700;
+	margin: 0;
+	line-height: 1.3;
+}
+
+.hospitalNameKr {
+	color: var(--lightText);
+	font-size: 13px;
+}
+
+.hospitalLocation {
+	color: var(--metricValue);
+	font-size: 14px;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	gap: 0.35rem;
+}
+
+.icon {
+	color: var(--lowValue);
+}
+
+.hospitalStats {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.rating {
+	color: #eab308;
+	font-size: 14px;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	gap: 0.25rem;
+}
+
+.starIcon {
+	color: #eab308;
+	margin-bottom: 1px;
+}
+
+.reviews {
+	color: var(--lightText);
+	font-size: 13px;
+}
+
+.doctors {
+	color: var(--lightMetricValue);
+	font-size: 13px;
+	display: flex;
+	align-items: center;
+	gap: 0.25rem;
+}
+
+.specialties {
+	display: flex;
+	gap: 0.5rem;
+	flex-wrap: wrap;
+}
+
+.specialtyTag {
+	background: var(--subtleCardBackground);
+	color: var(--metricValue);
+	padding: 0.25rem 0.75rem;
+	border-radius: 12px;
+	font-size: 11px;
+	font-weight: 500;
+}
+
+.emptyState {
+	text-align: center;
+	padding: 4rem 2rem;
+	color: var(--lightText);
+}
+
+.emptyState p {
+	font-size: 18px;
+	margin-bottom: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+	.hospitalsGrid {
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		gap: 1.5rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		padding: 1rem;
+	}
+
+	.searchBar {
+		flex-direction: column;
+	}
+
+	.filters {
+		flex-direction: column;
+	}
+
+	.select {
+		width: 100%;
+	}
+
+	.hospitalsGrid {
+		grid-template-columns: 1fr;
+		gap: 1.5rem;
+	}
+
+	.hospitalName {
+		font-size: 14px;
+	}
+
+	.hospitalNameKr {
+		font-size: 13px;
+	}
+
+	.hospitalLocation {
+		font-size: 13px;
+	}
+
+	.hospitalStats {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 480px) {
+	.backButton {
+		padding: 0.5rem 1rem;
+		font-size: 13px;
+	}
+
+	.searchInput {
+		padding: 0.75rem 1rem;
+		font-size: 14px;
+	}
+
+	.hospitalName {
+		font-size: 12px;
+	}
+
+	.hospitalNameKr {
+		font-size: 11px;
+	}
+
+	.hospitalLocation {
+		font-size: 11px;
+	}
+
+	.hospitalInfo {
+		padding: 0.5rem 0.75rem;
+	}
+}

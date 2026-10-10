@@ -1,0 +1,416 @@
+/* Light mode aesthetic colors */
+/* :root {
+  
+} */
+
+.mapContainer {
+  position: relative;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  background: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Map Header */
+.mapHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(135deg, var(--primary-50) 0%, var(--gray-50) 100%);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.mapInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mapTitle {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--gray-800);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mapPin {
+  font-size: 1.5rem;
+}
+
+.mapStats {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.statBadge {
+  background: var(--primary-100);
+  color: var(--primary-700);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid var(--primary-200);
+}
+
+.statCoordinate {
+  color: var(--gray-600);
+  font-size: 0.875rem;
+  font-family: 'Monaco', 'Courier New', monospace;
+  background: var(--gray-100);
+  padding: 0.25rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid var(--gray-200);
+}
+
+/* Tile Selector */
+.tileSelector {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.tileLabel {
+  color: var(--gray-600);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.tileButtons {
+  display: flex;
+  gap: 0.5rem;
+  background: white;
+  padding: 0.25rem;
+  border-radius: 8px;
+  border: 1px solid var(--gray-200);
+}
+
+.tileButton {
+  background: transparent;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.125rem;
+  transition: all 0.2s ease;
+  color: var(--gray-600);
+}
+
+.tileButton:hover {
+  background: var(--gray-100);
+  color: var(--gray-800);
+}
+
+.tileButton.active {
+  background: var(--primary-500);
+  color: white;
+}
+
+/* Leaflet Map */
+.leafletMap {
+  border-radius: 0 !important;
+}
+
+/* Popup Styling */
+.popup {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.popupContent {
+  padding: 0.5rem;
+  min-width: 280px;
+}
+
+.popupContent h4 {
+  margin: 0 0 0.5rem 0;
+  color: var(--gray-900);
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.popupLocation {
+  margin: 0 0 0.25rem 0;
+  color: var(--primary-600);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.popupAddress {
+  margin: 0 0 0.75rem 0;
+  color: var(--gray-600);
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.popupDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background: var(--gray-50);
+  border-radius: 8px;
+}
+
+.ratingBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  color: #8b5c00;
+  padding: 0.375rem 0.75rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  align-self: flex-start;
+}
+
+.star {
+  font-size: 1rem;
+}
+
+.specialties {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.specialties strong {
+  color: var(--gray-700);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.specialtyTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+}
+
+.specialtyTag {
+  background: white;
+  color: var(--gray-700);
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  border: 1px solid var(--gray-200);
+  transition: all 0.2s ease;
+}
+
+.specialtyTag:hover {
+  background: var(--primary-50);
+  border-color: var(--primary-300);
+}
+
+.moreTag {
+  background: var(--gray-100);
+  color: var(--gray-600);
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+/* Popup Actions */
+.popupActions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.actionButton {
+  padding: 0.625rem 1rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.primaryButton {
+  background: var(--primary-500);
+  color: white;
+}
+
+.primaryButton:hover {
+  background: var(--primary-600);
+  transform: translateY(-1px);
+}
+
+.mapButton {
+  background: white;
+  color: var(--gray-700);
+  border: 1px solid var(--gray-300);
+}
+
+.mapButton:hover {
+  background: var(--gray-50);
+  border-color: var(--gray-400);
+  transform: translateY(-1px);
+}
+
+.directionsButton {
+  background: linear-gradient(135deg, var(--success) 0%, #34d399 100%);
+  color: white;
+  border: none;
+}
+
+.directionsButton:hover {
+  background: linear-gradient(135deg, #0da271 0%, #10b981 100%);
+  transform: translateY(-1px);
+}
+
+/* Map Footer */
+.mapFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background: var(--gray-50);
+  border-top: 1px solid var(--gray-200);
+}
+
+.legend {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legendMarker {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.regularMarker {
+  background: var(--primary-500);
+}
+
+.hoveredMarker {
+  background: #8b5cf6;
+}
+
+.selectedMarker {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+}
+
+.footerNote {
+  color: var(--gray-600);
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.noteIcon {
+  font-size: 1rem;
+}
+
+/* Loading State */
+.loadingState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: var(--gray-50);
+  gap: 1rem;
+}
+
+.loadingSpinner {
+  width: 48px;
+  height: 48px;
+  border: 3px solid var(--gray-200);
+  border-top-color: var(--primary-500);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loadingState p {
+  color: var(--gray-600);
+  margin: 0;
+}
+
+/* Empty State */
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: linear-gradient(135deg, var(--primary-50) 0%, var(--gray-50) 100%);
+  padding: 3rem;
+  text-align: center;
+  gap: 1rem;
+}
+
+.emptyIcon {
+  font-size: 3rem;
+  opacity: 0.5;
+}
+
+.emptyState h3 {
+  margin: 0;
+  color: var(--gray-700);
+  font-weight: 600;
+}
+
+.emptyState p {
+  margin: 0;
+  color: var(--gray-600);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mapHeader {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  
+  .mapFooter {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  
+  .legend {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .tileButtons {
+    align-self: flex-start;
+  }
+  
+  .popupContent {
+    min-width: 240px;
+  }
+}
